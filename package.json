@@ -6,5 +6,27 @@
   "repository": "https://github.com/YanxinTang/fluent-ui",
   "author": "tyx1703",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "lib:build": "webpack --config build/webpack.prod.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@vue/test-utils": "^1.0.3",
+    "babel-jest": "^26.1.0",
+    "jest": "^26.1.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "vue-jest": "^4.0.0-beta.3",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.5.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^4.2.2"
+  }
 }

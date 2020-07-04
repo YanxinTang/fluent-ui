@@ -1,0 +1,5034 @@
+@font-face {
+  font-family: 'FabricMDL2Icons';
+  src: url('./font/fabricmdl2icons-2.47.woff2') format('woff2'),
+       url('./font/fabricmdl2icons-2.47.woff') format('woff'),
+       url('./font/fabricmdl2icons-2.47.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon[class^="icon-"], .icon[class*=" icon-"] {
+  font-family: 'FabricMDL2Icons';
+  display: inline;
+  line-height: 1;
+  font-style: normal;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-SwayLogo::before {
+  content: '\ED29'
+}
+
+.icon-ClassNotebookLogo::before {
+  content: '\EDC8'
+}
+
+.icon-DocsLogo::before {
+  content: '\EDCB'
+}
+
+.icon-OneNoteEduLogo::before {
+  content: '\EDD0'
+}
+
+.icon-ProjectLogo::before {
+  content: '\EDD4'
+}
+
+.icon-AdminALogo::before {
+  content: '\ED6A'
+}
+
+.icon-AdminCLogo::before {
+  content: '\ED6B'
+}
+
+.icon-AdminDLogo::before {
+  content: '\ED6C'
+}
+
+.icon-AdminELogo::before {
+  content: '\ED6D'
+}
+
+.icon-AdminLLogo::before {
+  content: '\ED6E'
+}
+
+.icon-AdminMLogo::before {
+  content: '\ED6F'
+}
+
+.icon-AdminOLogo::before {
+  content: '\ED70'
+}
+
+.icon-AdminPLogo::before {
+  content: '\ED71'
+}
+
+.icon-AdminSLogo::before {
+  content: '\ED72'
+}
+
+.icon-AdminYLogo::before {
+  content: '\ED73'
+}
+
+.icon-OfficeFormLogo::before {
+  content: '\EF86'
+}
+
+.icon-AADLogo::before {
+  content: '\ED68'
+}
+
+.icon-Accept::before {
+  content: '\E8FB'
+}
+
+.icon-AccessLogo::before {
+  content: '\ED69'
+}
+
+.icon-AccessLogoFill::before {
+  content: '\F1DB'
+}
+
+.icon-Accounts::before {
+  content: '\E910'
+}
+
+.icon-ActivityFeed::before {
+  content: '\F056'
+}
+
+.icon-Add::before {
+  content: '\E710'
+}
+
+.icon-AddEvent::before {
+  content: '\EEB5'
+}
+
+.icon-AddFavorite::before {
+  content: '\F0C8'
+}
+
+.icon-AddFavoriteFill::before {
+  content: '\F0C9'
+}
+
+.icon-AddFriend::before {
+  content: '\E8FA'
+}
+
+.icon-AddGroup::before {
+  content: '\EE3D'
+}
+
+.icon-AddOnlineMeeting::before {
+  content: '\ED8E'
+}
+
+.icon-AddPhone::before {
+  content: '\ED96'
+}
+
+.icon-AddTo::before {
+  content: '\ECC8'
+}
+
+.icon-Admin::before {
+  content: '\E7EF'
+}
+
+.icon-AdminALogo32::before {
+  content: '\F4BA'
+}
+
+.icon-AdminALogoFill32::before {
+  content: '\F4BB'
+}
+
+.icon-AdminALogoInverse32::before {
+  content: '\ED6A'
+}
+
+.icon-AdminCLogoInverse32::before {
+  content: '\ED6B'
+}
+
+.icon-AdminDLogoInverse32::before {
+  content: '\ED6C'
+}
+
+.icon-AdminELogoInverse32::before {
+  content: '\ED6D'
+}
+
+.icon-AdminLLogoInverse32::before {
+  content: '\ED6E'
+}
+
+.icon-AdminMLogoInverse32::before {
+  content: '\ED6F'
+}
+
+.icon-AdminOLogoInverse32::before {
+  content: '\ED70'
+}
+
+.icon-AdminPLogoInverse32::before {
+  content: '\ED71'
+}
+
+.icon-AdminSLogoInverse32::before {
+  content: '\ED72'
+}
+
+.icon-AdminYLogoInverse32::before {
+  content: '\ED73'
+}
+
+.icon-Airplane::before {
+  content: '\E709'
+}
+
+.icon-AirplaneSolid::before {
+  content: '\EB4C'
+}
+
+.icon-AirTickets::before {
+  content: '\EF7A'
+}
+
+.icon-AlarmClock::before {
+  content: '\E919'
+}
+
+.icon-Album::before {
+  content: '\E7AB'
+}
+
+.icon-AlbumRemove::before {
+  content: '\EC62'
+}
+
+.icon-AlertSolid::before {
+  content: '\F331'
+}
+
+.icon-AlignCenter::before {
+  content: '\E8E3'
+}
+
+.icon-AlignLeft::before {
+  content: '\E8E4'
+}
+
+.icon-AlignRight::before {
+  content: '\E8E2'
+}
+
+.icon-AnalyticsLogo::before {
+  content: '\F1DE'
+}
+
+.icon-AnalyticsQuery::before {
+  content: '\F1DF'
+}
+
+.icon-AnalyticsReport::before {
+  content: '\F1E1'
+}
+
+.icon-AndroidLogo::before {
+  content: '\EF8B'
+}
+
+.icon-Annotation::before {
+  content: '\E924'
+}
+
+.icon-AppIconDefault::before {
+  content: '\ECAA'
+}
+
+.icon-Archive::before {
+  content: '\F03F'
+}
+
+.icon-AreaChart::before {
+  content: '\E9D2'
+}
+
+.icon-Arrivals::before {
+  content: '\EB34'
+}
+
+.icon-ArrowDownRight8::before {
+  content: '\EED5'
+}
+
+.icon-ArrowDownRightMirrored8::before {
+  content: '\EEF0'
+}
+
+.icon-ArrowTallDownLeft::before {
+  content: '\F2BF'
+}
+
+.icon-ArrowTallDownRight::before {
+  content: '\F2C0'
+}
+
+.icon-ArrowTallUpLeft::before {
+  content: '\F2BD'
+}
+
+.icon-ArrowTallUpRight::before {
+  content: '\F2BE'
+}
+
+.icon-ArrowUpRight8::before {
+  content: '\EED4'
+}
+
+.icon-ArrowUpRightMirrored8::before {
+  content: '\EEEF'
+}
+
+.icon-Articles::before {
+  content: '\EAC1'
+}
+
+.icon-Ascending::before {
+  content: '\EDC0'
+}
+
+.icon-AspectRatio::before {
+  content: '\E799'
+}
+
+.icon-AssessmentGroup::before {
+  content: '\F31A'
+}
+
+.icon-AssessmentGroupTemplate::before {
+  content: '\F2B1'
+}
+
+.icon-AssetLibrary::before {
+  content: '\EEB6'
+}
+
+.icon-Assign::before {
+  content: '\E9D3'
+}
+
+.icon-Asterisk::before {
+  content: '\EA38'
+}
+
+.icon-AsteriskSolid::before {
+  content: '\F34D'
+}
+
+.icon-ATPLogo::before {
+  content: '\EF85'
+}
+
+.icon-Attach::before {
+  content: '\E723'
+}
+
+.icon-AustralianRules::before {
+  content: '\EE70'
+}
+
+.icon-AutoEnhanceOff::before {
+  content: '\E78E'
+}
+
+.icon-AutoEnhanceOn::before {
+  content: '\E78D'
+}
+
+.icon-AutoFillTemplate::before {
+  content: '\F313'
+}
+
+.icon-AutoRacing::before {
+  content: '\EB24'
+}
+
+.icon-AwayStatus::before {
+  content: '\EE6A'
+}
+
+.icon-AzureAPIManagement::before {
+  content: '\F37F'
+}
+
+.icon-AzureKeyVault::before {
+  content: '\F3B4'
+}
+
+.icon-AzureLogo::before {
+  content: '\EB6A'
+}
+
+.icon-AzureServiceEndpoint::before {
+  content: '\F380'
+}
+
+.icon-Back::before {
+  content: '\E72B'
+}
+
+.icon-Backlog::before {
+  content: '\F2AC'
+}
+
+.icon-BacklogBoard::before {
+  content: '\F444'
+}
+
+.icon-BackToWindow::before {
+  content: '\E73F'
+}
+
+.icon-Badge::before {
+  content: '\EC1B'
+}
+
+.icon-Balloons::before {
+  content: '\ED7E'
+}
+
+.icon-BankSolid::before {
+  content: '\F34F'
+}
+
+.icon-BarChart4::before {
+  content: '\EAE7'
+}
+
+.icon-BarChartHorizontal::before {
+  content: '\E9EB'
+}
+
+.icon-BarChartVertical::before {
+  content: '\E9EC'
+}
+
+.icon-Baseball::before {
+  content: '\EB20'
+}
+
+.icon-BeerMug::before {
+  content: '\F49E'
+}
+
+.icon-BidiLtr::before {
+  content: '\E9AA'
+}
+
+.icon-BidiRtl::before {
+  content: '\E9AB'
+}
+
+.icon-BingLogo::before {
+  content: '\EB6B'
+}
+
+.icon-BlockContact::before {
+  content: '\E8F8'
+}
+
+.icon-Blocked::before {
+  content: '\E733'
+}
+
+.icon-Blocked2::before {
+  content: '\ECE4'
+}
+
+.icon-BlowingSnow::before {
+  content: '\E9C9'
+}
+
+.icon-Blur::before {
+  content: '\F28E'
+}
+
+.icon-Boards::before {
+  content: '\EF68'
+}
+
+.icon-Bold::before {
+  content: '\E8DD'
+}
+
+.icon-BookingsLogo::before {
+  content: '\EDC7'
+}
+
+.icon-Bookmarks::before {
+  content: '\E8A4'
+}
+
+.icon-BookmarksMirrored::before {
+  content: '\EA41'
+}
+
+.icon-BoxAdditionSolid::before {
+  content: '\F2D4'
+}
+
+.icon-BoxCheckmarkSolid::before {
+  content: '\F2D7'
+}
+
+.icon-BoxLogo::before {
+  content: '\ED75'
+}
+
+.icon-BoxMultiplySolid::before {
+  content: '\F2D5'
+}
+
+.icon-BoxPlaySolid::before {
+  content: '\F2D6'
+}
+
+.icon-BoxSubtractSolid::before {
+  content: '\F2D3'
+}
+
+.icon-BranchCommit::before {
+  content: '\F293'
+}
+
+.icon-BranchCompare::before {
+  content: '\F294'
+}
+
+.icon-BranchFork::before {
+  content: '\F173'
+}
+
+.icon-BranchFork2::before {
+  content: '\F291'
+}
+
+.icon-BranchLocked::before {
+  content: '\F292'
+}
+
+.icon-BranchMerge::before {
+  content: '\F295'
+}
+
+.icon-BranchPullRequest::before {
+  content: '\F296'
+}
+
+.icon-BranchSearch::before {
+  content: '\F297'
+}
+
+.icon-BranchShelveset::before {
+  content: '\F298'
+}
+
+.icon-Breadcrumb::before {
+  content: '\EF8C'
+}
+
+.icon-Breakfast::before {
+  content: '\F49C'
+}
+
+.icon-Brightness::before {
+  content: '\E706'
+}
+
+.icon-Broom::before {
+  content: '\EA99'
+}
+
+.icon-Brunch::before {
+  content: '\F49D'
+}
+
+.icon-BucketColor::before {
+  content: '\F1B6'
+}
+
+.icon-BucketColorFill::before {
+  content: '\F1B7'
+}
+
+.icon-BufferTimeAfter::before {
+  content: '\F0D0'
+}
+
+.icon-BufferTimeBefore::before {
+  content: '\F0CF'
+}
+
+.icon-BufferTimeBoth::before {
+  content: '\F0D1'
+}
+
+.icon-BugSolid::before {
+  content: '\F335'
+}
+
+.icon-Build::before {
+  content: '\F28F'
+}
+
+.icon-BuildIssue::before {
+  content: '\F319'
+}
+
+.icon-BuildQueue::before {
+  content: '\F24F'
+}
+
+.icon-BuildQueueNew::before {
+  content: '\F250'
+}
+
+.icon-BulletedList::before {
+  content: '\E8FD'
+}
+
+.icon-BulletedList2::before {
+  content: '\F2C7'
+}
+
+.icon-BulletedList2Mirrored::before {
+  content: '\F2C8'
+}
+
+.icon-BulletedListMirrored::before {
+  content: '\EA42'
+}
+
+.icon-Bus::before {
+  content: '\E806'
+}
+
+.icon-BusinessCenterLogo::before {
+  content: '\F4B2'
+}
+
+.icon-BusinessHoursSign::before {
+  content: '\F310'
+}
+
+.icon-BusSolid::before {
+  content: '\EB47'
+}
+
+.icon-Cafe::before {
+  content: '\EC32'
+}
+
+.icon-Cake::before {
+  content: '\ECA4'
+}
+
+.icon-CalculatorAddition::before {
+  content: '\E948'
+}
+
+.icon-CalculatorEqualTo::before {
+  content: '\E94E'
+}
+
+.icon-CalculatorMultiply::before {
+  content: '\E947'
+}
+
+.icon-CalculatorNotEqualTo::before {
+  content: '\F2D2'
+}
+
+.icon-CalculatorSubtract::before {
+  content: '\E949'
+}
+
+.icon-Calendar::before {
+  content: '\E787'
+}
+
+.icon-CalendarAgenda::before {
+  content: '\EE9A'
+}
+
+.icon-CalendarDay::before {
+  content: '\E8BF'
+}
+
+.icon-CalendarMirrored::before {
+  content: '\ED28'
+}
+
+.icon-CalendarReply::before {
+  content: '\E8F5'
+}
+
+.icon-CalendarWeek::before {
+  content: '\E8C0'
+}
+
+.icon-CalendarWorkWeek::before {
+  content: '\EF51'
+}
+
+.icon-CaloriesAdd::before {
+  content: '\F172'
+}
+
+.icon-Camera::before {
+  content: '\E722'
+}
+
+.icon-Cancel::before {
+  content: '\E711'
+}
+
+.icon-CannedChat::before {
+  content: '\F0F2'
+}
+
+.icon-Car::before {
+  content: '\E804'
+}
+
+.icon-CaretBottomLeftCenter8::before {
+  content: '\F365'
+}
+
+.icon-CaretBottomLeftSolid8::before {
+  content: '\F121'
+}
+
+.icon-CaretBottomRightCenter8::before {
+  content: '\F364'
+}
+
+.icon-CaretBottomRightSolid8::before {
+  content: '\F122'
+}
+
+.icon-CaretDown8::before {
+  content: '\EDD8'
+}
+
+.icon-CaretDownSolid8::before {
+  content: '\EDDC'
+}
+
+.icon-CaretHollow::before {
+  content: '\E817'
+}
+
+.icon-CaretHollowMirrored::before {
+  content: '\EA45'
+}
+
+.icon-CaretLeft8::before {
+  content: '\EDD5'
+}
+
+.icon-CaretLeftSolid8::before {
+  content: '\EDD9'
+}
+
+.icon-CaretRight::before {
+  content: '\F06B'
+}
+
+.icon-CaretRight8::before {
+  content: '\EDD6'
+}
+
+.icon-CaretRightSolid8::before {
+  content: '\EDDA'
+}
+
+.icon-CaretSolid::before {
+  content: '\E818'
+}
+
+.icon-CaretSolid16::before {
+  content: '\EE62'
+}
+
+.icon-CaretSolidDown::before {
+  content: '\F08E'
+}
+
+.icon-CaretSolidLeft::before {
+  content: '\F08D'
+}
+
+.icon-CaretSolidMirrored::before {
+  content: '\EA46'
+}
+
+.icon-CaretSolidRight::before {
+  content: '\F08F'
+}
+
+.icon-CaretSolidUp::before {
+  content: '\F090'
+}
+
+.icon-CaretTopLeftCenter8::before {
+  content: '\F367'
+}
+
+.icon-CaretTopLeftSolid8::before {
+  content: '\EF54'
+}
+
+.icon-CaretTopRightCenter8::before {
+  content: '\F366'
+}
+
+.icon-CaretTopRightSolid8::before {
+  content: '\EF55'
+}
+
+.icon-CaretUp8::before {
+  content: '\EDD7'
+}
+
+.icon-CaretUpSolid8::before {
+  content: '\EDDB'
+}
+
+.icon-Cat::before {
+  content: '\ED7F'
+}
+
+.icon-CellPhone::before {
+  content: '\E8EA'
+}
+
+.icon-Certificate::before {
+  content: '\EB95'
+}
+
+.icon-Chart::before {
+  content: '\E999'
+}
+
+.icon-Chat::before {
+  content: '\E901'
+}
+
+.icon-ChatInviteFriend::before {
+  content: '\ECFE'
+}
+
+.icon-ChatSolid::before {
+  content: '\F344'
+}
+
+.icon-Checkbox::before {
+  content: '\E739'
+}
+
+.icon-CheckboxComposite::before {
+  content: '\E73A'
+}
+
+.icon-CheckboxCompositeReversed::before {
+  content: '\E73D'
+}
+
+.icon-CheckboxIndeterminate::before {
+  content: '\E73C'
+}
+
+.icon-CheckList::before {
+  content: '\E9D5'
+}
+
+.icon-CheckMark::before {
+  content: '\E73E'
+}
+
+.icon-ChevronDown::before {
+  content: '\E70D'
+}
+
+.icon-ChevronDownEnd6::before {
+  content: '\F36F'
+}
+
+.icon-ChevronDownMed::before {
+  content: '\E972'
+}
+
+.icon-ChevronDownSmall::before {
+  content: '\E96E'
+}
+
+.icon-ChevronFold10::before {
+  content: '\F36A'
+}
+
+.icon-ChevronLeft::before {
+  content: '\E76B'
+}
+
+.icon-ChevronLeftEnd6::before {
+  content: '\F371'
+}
+
+.icon-ChevronLeftMed::before {
+  content: '\E973'
+}
+
+.icon-ChevronLeftSmall::before {
+  content: '\E96F'
+}
+
+.icon-ChevronRight::before {
+  content: '\E76C'
+}
+
+.icon-ChevronRightEnd6::before {
+  content: '\F372'
+}
+
+.icon-ChevronRightMed::before {
+  content: '\E974'
+}
+
+.icon-ChevronRightSmall::before {
+  content: '\E970'
+}
+
+.icon-ChevronUnfold10::before {
+  content: '\F369'
+}
+
+.icon-ChevronUp::before {
+  content: '\E70E'
+}
+
+.icon-ChevronUpEnd6::before {
+  content: '\F370'
+}
+
+.icon-ChevronUpMed::before {
+  content: '\E971'
+}
+
+.icon-ChevronUpSmall::before {
+  content: '\E96D'
+}
+
+.icon-Chopsticks::before {
+  content: '\F4A2'
+}
+
+.icon-ChromeBack::before {
+  content: '\E830'
+}
+
+.icon-ChromeBackMirrored::before {
+  content: '\EA47'
+}
+
+.icon-ChromeClose::before {
+  content: '\E8BB'
+}
+
+.icon-ChromeMinimize::before {
+  content: '\E921'
+}
+
+.icon-CircleAddition::before {
+  content: '\F2E3'
+}
+
+.icon-CircleAdditionSolid::before {
+  content: '\F2E4'
+}
+
+.icon-CircleFill::before {
+  content: '\EA3B'
+}
+
+.icon-CircleHalfFull::before {
+  content: '\ED9E'
+}
+
+.icon-CirclePause::before {
+  content: '\F2D9'
+}
+
+.icon-CirclePauseSolid::before {
+  content: '\F2D8'
+}
+
+.icon-CirclePlus::before {
+  content: '\EAEE'
+}
+
+.icon-CircleRing::before {
+  content: '\EA3A'
+}
+
+.icon-CircleStop::before {
+  content: '\F2DC'
+}
+
+.icon-CircleStopSolid::before {
+  content: '\F2DB'
+}
+
+.icon-CityNext::before {
+  content: '\EC06'
+}
+
+.icon-ClassNotebookLogo16::before {
+  content: '\F488'
+}
+
+.icon-ClassNotebookLogo32::before {
+  content: '\F486'
+}
+
+.icon-ClassNotebookLogoFill16::before {
+  content: '\F489'
+}
+
+.icon-ClassNotebookLogoFill32::before {
+  content: '\F487'
+}
+
+.icon-ClassNotebookLogoInverse::before {
+  content: '\EDC8'
+}
+
+.icon-ClassNotebookLogoInverse16::before {
+  content: '\F48B'
+}
+
+.icon-ClassNotebookLogoInverse32::before {
+  content: '\F48A'
+}
+
+.icon-ClassroomLogo::before {
+  content: '\EF75'
+}
+
+.icon-Clear::before {
+  content: '\E894'
+}
+
+.icon-ClearFilter::before {
+  content: '\EF8F'
+}
+
+.icon-ClearFormatting::before {
+  content: '\EDDD'
+}
+
+.icon-ClearNight::before {
+  content: '\E9C2'
+}
+
+.icon-Clock::before {
+  content: '\E917'
+}
+
+.icon-CloneToDesktop::before {
+  content: '\F28C'
+}
+
+.icon-ClosedCaption::before {
+  content: '\EF84'
+}
+
+.icon-ClosePane::before {
+  content: '\E89F'
+}
+
+.icon-ClosePaneMirrored::before {
+  content: '\EA49'
+}
+
+.icon-Cloud::before {
+  content: '\E753'
+}
+
+.icon-CloudAdd::before {
+  content: '\ECA9'
+}
+
+.icon-CloudDownload::before {
+  content: '\EBD3'
+}
+
+.icon-CloudUpload::before {
+  content: '\EC8E'
+}
+
+.icon-CloudWeather::before {
+  content: '\E9BE'
+}
+
+.icon-Cloudy::before {
+  content: '\E9BF'
+}
+
+.icon-Cocktails::before {
+  content: '\EA9D'
+}
+
+.icon-Code::before {
+  content: '\E943'
+}
+
+.icon-Coffee::before {
+  content: '\EAEF'
+}
+
+.icon-CoffeeScript::before {
+  content: '\F2FA'
+}
+
+.icon-CollapseContent::before {
+  content: '\F165'
+}
+
+.icon-CollapseContentSingle::before {
+  content: '\F166'
+}
+
+.icon-CollapseMenu::before {
+  content: '\EF66'
+}
+
+.icon-CollegeFootball::before {
+  content: '\EB26'
+}
+
+.icon-CollegeHoops::before {
+  content: '\EB25'
+}
+
+.icon-Color::before {
+  content: '\E790'
+}
+
+.icon-ColorSolid::before {
+  content: '\F354'
+}
+
+.icon-ColumnLeftTwoThirds::before {
+  content: '\F1D6'
+}
+
+.icon-ColumnLeftTwoThirdsEdit::before {
+  content: '\F324'
+}
+
+.icon-ColumnOptions::before {
+  content: '\F317'
+}
+
+.icon-ColumnRightTwoThirds::before {
+  content: '\F1D7'
+}
+
+.icon-ColumnRightTwoThirdsEdit::before {
+  content: '\F325'
+}
+
+.icon-Combine::before {
+  content: '\EDBB'
+}
+
+.icon-CommandPrompt::before {
+  content: '\E756'
+}
+
+.icon-Comment::before {
+  content: '\E90A'
+}
+
+.icon-CommentAdd::before {
+  content: '\F2B3'
+}
+
+.icon-CommentNext::before {
+  content: '\F2B4'
+}
+
+.icon-CommentPrevious::before {
+  content: '\F2B5'
+}
+
+.icon-CommentUrgent::before {
+  content: '\F307'
+}
+
+.icon-Communications::before {
+  content: '\E95A'
+}
+
+.icon-CompassNW::before {
+  content: '\E942'
+}
+
+.icon-Completed::before {
+  content: '\E930'
+}
+
+.icon-CompletedSolid::before {
+  content: '\EC61'
+}
+
+.icon-ConfigurationSolid::before {
+  content: '\F334'
+}
+
+.icon-ConstructionCone::before {
+  content: '\E98F'
+}
+
+.icon-ConstructionConeSolid::before {
+  content: '\F339'
+}
+
+.icon-Contact::before {
+  content: '\E77B'
+}
+
+.icon-ContactCard::before {
+  content: '\EEBD'
+}
+
+.icon-ContactInfo::before {
+  content: '\E779'
+}
+
+.icon-Contrast::before {
+  content: '\E7A1'
+}
+
+.icon-Copy::before {
+  content: '\E8C8'
+}
+
+.icon-Cotton::before {
+  content: '\EAF3'
+}
+
+.icon-CPlusPlus::before {
+  content: '\F2F4'
+}
+
+.icon-CPlusPlusLanguage::before {
+  content: '\F2F3'
+}
+
+.icon-Cricket::before {
+  content: '\EB1E'
+}
+
+.icon-CRMReport::before {
+  content: '\EFFE'
+}
+
+.icon-Crown::before {
+  content: '\ED01'
+}
+
+.icon-CrownSolid::before {
+  content: '\F336'
+}
+
+.icon-CSharp::before {
+  content: '\F2F0'
+}
+
+.icon-CSharpLanguage::before {
+  content: '\F2EF'
+}
+
+.icon-CSS::before {
+  content: '\EBEF'
+}
+
+.icon-CustomList::before {
+  content: '\EEBE'
+}
+
+.icon-CustomListMirrored::before {
+  content: '\EEBF'
+}
+
+.icon-Cut::before {
+  content: '\E8C6'
+}
+
+.icon-Cycling::before {
+  content: '\EAC7'
+}
+
+.icon-Database::before {
+  content: '\EFC7'
+}
+
+.icon-DataConnectionLibrary::before {
+  content: '\EEB7'
+}
+
+.icon-DateTime::before {
+  content: '\EC92'
+}
+
+.icon-DateTime2::before {
+  content: '\EA17'
+}
+
+.icon-DateTimeMirrored::before {
+  content: '\EE93'
+}
+
+.icon-DecisionSolid::before {
+  content: '\F350'
+}
+
+.icon-DeclineCall::before {
+  content: '\F405'
+}
+
+.icon-DecreaseIndentLegacy::before {
+  content: '\E290'
+}
+
+.icon-DefectSolid::before {
+  content: '\F449'
+}
+
+.icon-Delete::before {
+  content: '\E74D'
+}
+
+.icon-DeliveryTruck::before {
+  content: '\EBF4'
+}
+
+.icon-DelveAnalytics::before {
+  content: '\EEEE'
+}
+
+.icon-DelveAnalyticsLogo::before {
+  content: '\EDCA'
+}
+
+.icon-DelveLogo::before {
+  content: '\F280'
+}
+
+.icon-DelveLogoFill::before {
+  content: '\F281'
+}
+
+.icon-DelveLogoInverse::before {
+  content: '\ED76'
+}
+
+.icon-Deploy::before {
+  content: '\F29D'
+}
+
+.icon-Descending::before {
+  content: '\EDC1'
+}
+
+.icon-Design::before {
+  content: '\EB3C'
+}
+
+.icon-DeveloperTools::before {
+  content: '\EC7A'
+}
+
+.icon-Devices3::before {
+  content: '\EA6C'
+}
+
+.icon-Devices4::before {
+  content: '\EB66'
+}
+
+.icon-Diagnostic::before {
+  content: '\E9D9'
+}
+
+.icon-Dialpad::before {
+  content: '\E75F'
+}
+
+.icon-DiamondSolid::before {
+  content: '\F34C'
+}
+
+.icon-Dictionary::before {
+  content: '\E82D'
+}
+
+.icon-DietPlanNotebook::before {
+  content: '\EAC8'
+}
+
+.icon-DiffInline::before {
+  content: '\F309'
+}
+
+.icon-DiffSideBySide::before {
+  content: '\F30A'
+}
+
+.icon-DisableUpdates::before {
+  content: '\E8D8'
+}
+
+.icon-Dislike::before {
+  content: '\E8E0'
+}
+
+.icon-DislikeSolid::before {
+  content: '\F3C0'
+}
+
+.icon-DockLeft::before {
+  content: '\E90C'
+}
+
+.icon-DockLeftMirrored::before {
+  content: '\EA4C'
+}
+
+.icon-DockRight::before {
+  content: '\E90D'
+}
+
+.icon-DocLibrary::before {
+  content: '\EEB8'
+}
+
+.icon-DocsLogoInverse::before {
+  content: '\EDCB'
+}
+
+.icon-Document::before {
+  content: '\E8A5'
+}
+
+.icon-DocumentApproval::before {
+  content: '\F28B'
+}
+
+.icon-Documentation::before {
+  content: '\EC17'
+}
+
+.icon-DocumentManagement::before {
+  content: '\EFFC'
+}
+
+.icon-DocumentReply::before {
+  content: '\EF57'
+}
+
+.icon-DocumentSearch::before {
+  content: '\EF6C'
+}
+
+.icon-DocumentSet::before {
+  content: '\EED6'
+}
+
+.icon-DonutChart::before {
+  content: '\F368'
+}
+
+.icon-Door::before {
+  content: '\EB75'
+}
+
+.icon-DoubleBookmark::before {
+  content: '\EB8F'
+}
+
+.icon-DoubleChevronDown::before {
+  content: '\EE04'
+}
+
+.icon-DoubleChevronDown12::before {
+  content: '\EE97'
+}
+
+.icon-DoubleChevronDown8::before {
+  content: '\F36B'
+}
+
+.icon-DoubleChevronLeft::before {
+  content: '\EDBE'
+}
+
+.icon-DoubleChevronLeft12::before {
+  content: '\EE98'
+}
+
+.icon-DoubleChevronLeft8::before {
+  content: '\F36D'
+}
+
+.icon-DoubleChevronLeftMed::before {
+  content: '\E991'
+}
+
+.icon-DoubleChevronLeftMedMirrored::before {
+  content: '\EA4D'
+}
+
+.icon-DoubleChevronRight::before {
+  content: '\EDBF'
+}
+
+.icon-DoubleChevronRight12::before {
+  content: '\EE99'
+}
+
+.icon-DoubleChevronRight8::before {
+  content: '\F36E'
+}
+
+.icon-DoubleChevronUp::before {
+  content: '\EDBD'
+}
+
+.icon-DoubleChevronUp12::before {
+  content: '\EE96'
+}
+
+.icon-DoubleChevronUp8::before {
+  content: '\F36C'
+}
+
+.icon-DoubleColumn::before {
+  content: '\F1D4'
+}
+
+.icon-DoubleColumnEdit::before {
+  content: '\F322'
+}
+
+.icon-Down::before {
+  content: '\E74B'
+}
+
+.icon-Download::before {
+  content: '\E896'
+}
+
+.icon-DRM::before {
+  content: '\ECA8'
+}
+
+.icon-Drop::before {
+  content: '\EB42'
+}
+
+.icon-DropboxLogo::before {
+  content: '\ED77'
+}
+
+.icon-Dropdown::before {
+  content: '\EDC5'
+}
+
+.icon-Duststorm::before {
+  content: '\E9CD'
+}
+
+.icon-Dynamics365Logo::before {
+  content: '\EDCC'
+}
+
+.icon-DynamicSMBLogo::before {
+  content: '\EDCD'
+}
+
+.icon-EatDrink::before {
+  content: '\E807'
+}
+
+.icon-EdgeLogo::before {
+  content: '\EC60'
+}
+
+.icon-Edit::before {
+  content: '\E70F'
+}
+
+.icon-EditMail::before {
+  content: '\EF61'
+}
+
+.icon-EditMirrored::before {
+  content: '\EB7E'
+}
+
+.icon-EditNote::before {
+  content: '\ED9D'
+}
+
+.icon-EditPhoto::before {
+  content: '\EF77'
+}
+
+.icon-EditSolid12::before {
+  content: '\F4B5'
+}
+
+.icon-EditSolidMirrored12::before {
+  content: '\F4B6'
+}
+
+.icon-EditStyle::before {
+  content: '\EF60'
+}
+
+.icon-Education::before {
+  content: '\E7BE'
+}
+
+.icon-EgnyteLogo::before {
+  content: '\F373'
+}
+
+.icon-Embed::before {
+  content: '\ECCE'
+}
+
+.icon-EMI::before {
+  content: '\E731'
+}
+
+.icon-Emoji::before {
+  content: '\E899'
+}
+
+.icon-Emoji2::before {
+  content: '\E76E'
+}
+
+.icon-EmojiDisappointed::before {
+  content: '\EA88'
+}
+
+.icon-EmojiNeutral::before {
+  content: '\EA87'
+}
+
+.icon-EmptyRecycleBin::before {
+  content: '\EF88'
+}
+
+.icon-EngineeringGroup::before {
+  content: '\F362'
+}
+
+.icon-Equalizer::before {
+  content: '\E9E9'
+}
+
+.icon-EraseTool::before {
+  content: '\E75C'
+}
+
+.icon-Error::before {
+  content: '\E783'
+}
+
+.icon-ErrorBadge::before {
+  content: '\EA39'
+}
+
+.icon-Event::before {
+  content: '\ECA3'
+}
+
+.icon-EventAccepted::before {
+  content: '\F422'
+}
+
+.icon-EventDate::before {
+  content: '\F059'
+}
+
+.icon-EventDeclined::before {
+  content: '\F425'
+}
+
+.icon-EventInfo::before {
+  content: '\ED8B'
+}
+
+.icon-EventTentative::before {
+  content: '\F423'
+}
+
+.icon-EventTentativeMirrored::before {
+  content: '\F424'
+}
+
+.icon-ExcelDocument::before {
+  content: '\EF73'
+}
+
+.icon-ExcelLogo::before {
+  content: '\F1E5'
+}
+
+.icon-ExcelLogo16::before {
+  content: '\F397'
+}
+
+.icon-ExcelLogoFill::before {
+  content: '\F1E6'
+}
+
+.icon-ExcelLogoFill16::before {
+  content: '\F398'
+}
+
+.icon-ExcelLogoInverse::before {
+  content: '\EC28'
+}
+
+.icon-ExcelLogoInverse16::before {
+  content: '\F396'
+}
+
+.icon-ExchangeLogo::before {
+  content: '\F284'
+}
+
+.icon-ExchangeLogoFill::before {
+  content: '\F285'
+}
+
+.icon-ExchangeLogoInverse::before {
+  content: '\ED78'
+}
+
+.icon-ExerciseTracker::before {
+  content: '\EACC'
+}
+
+.icon-ExpandMenu::before {
+  content: '\EF67'
+}
+
+.icon-ExploreContent::before {
+  content: '\ECCD'
+}
+
+.icon-ExploreContentSingle::before {
+  content: '\F164'
+}
+
+.icon-Export::before {
+  content: '\EDE1'
+}
+
+.icon-ExportMirrored::before {
+  content: '\EDE2'
+}
+
+.icon-ExternalBuild::before {
+  content: '\F445'
+}
+
+.icon-ExternalTFVC::before {
+  content: '\F446'
+}
+
+.icon-ExternalXAML::before {
+  content: '\F447'
+}
+
+.icon-FabricAssetLibrary::before {
+  content: '\F09C'
+}
+
+.icon-FabricDataConnectionLibrary::before {
+  content: '\F09D'
+}
+
+.icon-FabricDocLibrary::before {
+  content: '\F09E'
+}
+
+.icon-FabricFolder::before {
+  content: '\F0A9'
+}
+
+.icon-FabricFolderFill::before {
+  content: '\F0AA'
+}
+
+.icon-FabricFolderSearch::before {
+  content: '\F0A4'
+}
+
+.icon-FabricFormLibrary::before {
+  content: '\F09F'
+}
+
+.icon-FabricFormLibraryMirrored::before {
+  content: '\F0A0'
+}
+
+.icon-FabricMovetoFolder::before {
+  content: '\F0A5'
+}
+
+.icon-FabricNewFolder::before {
+  content: '\F0AB'
+}
+
+.icon-FabricOpenFolderHorizontal::before {
+  content: '\F0A8'
+}
+
+.icon-FabricPictureLibrary::before {
+  content: '\F0AC'
+}
+
+.icon-FabricPublicFolder::before {
+  content: '\F0A3'
+}
+
+.icon-FabricReportLibrary::before {
+  content: '\F0A1'
+}
+
+.icon-FabricReportLibraryMirrored::before {
+  content: '\F0A2'
+}
+
+.icon-FabricSyncFolder::before {
+  content: '\F0A7'
+}
+
+.icon-FabricUnsyncFolder::before {
+  content: '\F0A6'
+}
+
+.icon-FacebookLogo::before {
+  content: '\ECB3'
+}
+
+.icon-Family::before {
+  content: '\EBDA'
+}
+
+.icon-FangBody::before {
+  content: '\ECEB'
+}
+
+.icon-FastForward::before {
+  content: '\EB9D'
+}
+
+.icon-Favicon::before {
+  content: '\E737'
+}
+
+.icon-FavoriteList::before {
+  content: '\E728'
+}
+
+.icon-FavoriteStar::before {
+  content: '\E734'
+}
+
+.icon-FavoriteStarFill::before {
+  content: '\E735'
+}
+
+.icon-Fax::before {
+  content: '\EF5C'
+}
+
+.icon-Feedback::before {
+  content: '\ED15'
+}
+
+.icon-FeedbackRequestMirroredSolid::before {
+  content: '\F35A'
+}
+
+.icon-FeedbackRequestSolid::before {
+  content: '\F359'
+}
+
+.icon-FeedbackResponseSolid::before {
+  content: '\F35B'
+}
+
+.icon-Ferry::before {
+  content: '\E7E3'
+}
+
+.icon-FerrySolid::before {
+  content: '\EB48'
+}
+
+.icon-FieldChanged::before {
+  content: '\F2C3'
+}
+
+.icon-FieldEmpty::before {
+  content: '\F2C1'
+}
+
+.icon-FieldFilled::before {
+  content: '\F2C2'
+}
+
+.icon-FieldNotChanged::before {
+  content: '\F2C4'
+}
+
+.icon-FieldReadOnly::before {
+  content: '\F442'
+}
+
+.icon-FieldRequired::before {
+  content: '\F443'
+}
+
+.icon-FileASPX::before {
+  content: '\F2E9'
+}
+
+.icon-FileBug::before {
+  content: '\F30D'
+}
+
+.icon-FileCode::before {
+  content: '\F30E'
+}
+
+.icon-FileComment::before {
+  content: '\F30F'
+}
+
+.icon-FileCSS::before {
+  content: '\F2EA'
+}
+
+.icon-FileHTML::before {
+  content: '\F2ED'
+}
+
+.icon-FileImage::before {
+  content: '\F311'
+}
+
+.icon-FileJAVA::before {
+  content: '\F2E8'
+}
+
+.icon-FileLess::before {
+  content: '\F2EC'
+}
+
+.icon-FilePDB::before {
+  content: '\F2E5'
+}
+
+.icon-FileSass::before {
+  content: '\F2EB'
+}
+
+.icon-FileSQL::before {
+  content: '\F2E7'
+}
+
+.icon-FileSymlink::before {
+  content: '\F312'
+}
+
+.icon-FileTemplate::before {
+  content: '\F2E6'
+}
+
+.icon-FileTypeSolution::before {
+  content: '\F387'
+}
+
+.icon-Filter::before {
+  content: '\E71C'
+}
+
+.icon-Filters::before {
+  content: '\E795'
+}
+
+.icon-FilterSolid::before {
+  content: '\F412'
+}
+
+.icon-FiltersSolid::before {
+  content: '\F353'
+}
+
+.icon-Financial::before {
+  content: '\E7BB'
+}
+
+.icon-FinancialMirroredSolid::before {
+  content: '\F347'
+}
+
+.icon-FinancialSolid::before {
+  content: '\F346'
+}
+
+.icon-Fingerprint::before {
+  content: '\E928'
+}
+
+.icon-FiveTileGrid::before {
+  content: '\F274'
+}
+
+.icon-Flag::before {
+  content: '\E7C1'
+}
+
+.icon-FlameSolid::before {
+  content: '\F1F3'
+}
+
+.icon-FlickDown::before {
+  content: '\E935'
+}
+
+.icon-FlickLeft::before {
+  content: '\E937'
+}
+
+.icon-FlickRight::before {
+  content: '\E938'
+}
+
+.icon-FlickUp::before {
+  content: '\E936'
+}
+
+.icon-Flow::before {
+  content: '\EF90'
+}
+
+.icon-FocalPoint::before {
+  content: '\F277'
+}
+
+.icon-Fog::before {
+  content: '\E9CB'
+}
+
+.icon-Folder::before {
+  content: '\E8B7'
+}
+
+.icon-FolderFill::before {
+  content: '\E8D5'
+}
+
+.icon-FolderHorizontal::before {
+  content: '\F12B'
+}
+
+.icon-FolderList::before {
+  content: '\F2CE'
+}
+
+.icon-FolderListMirrored::before {
+  content: '\F2CF'
+}
+
+.icon-FolderOpen::before {
+  content: '\E838'
+}
+
+.icon-FolderQuery::before {
+  content: '\F2CD'
+}
+
+.icon-FolderSearch::before {
+  content: '\EF65'
+}
+
+.icon-Font::before {
+  content: '\E8D2'
+}
+
+.icon-FontColor::before {
+  content: '\E8D3'
+}
+
+.icon-FontDecrease::before {
+  content: '\E8E7'
+}
+
+.icon-FontIncrease::before {
+  content: '\E8E8'
+}
+
+.icon-FontSize::before {
+  content: '\E8E9'
+}
+
+.icon-FormLibrary::before {
+  content: '\EEB9'
+}
+
+.icon-FormLibraryMirrored::before {
+  content: '\EEBA'
+}
+
+.icon-Forward::before {
+  content: '\E72A'
+}
+
+.icon-ForwardEvent::before {
+  content: '\ED8C'
+}
+
+.icon-Freezing::before {
+  content: '\E9EF'
+}
+
+.icon-Frigid::before {
+  content: '\E9CA'
+}
+
+.icon-FSharp::before {
+  content: '\F2F6'
+}
+
+.icon-FSharpLanguage::before {
+  content: '\F2F5'
+}
+
+.icon-FullCircleMask::before {
+  content: '\E91F'
+}
+
+.icon-FullHistory::before {
+  content: '\F31C'
+}
+
+.icon-FullScreen::before {
+  content: '\E740'
+}
+
+.icon-FullWidth::before {
+  content: '\F2FE'
+}
+
+.icon-FullWidthEdit::before {
+  content: '\F2FF'
+}
+
+.icon-GallatinLogo::before {
+  content: '\F496'
+}
+
+.icon-Generate::before {
+  content: '\E9DA'
+}
+
+.icon-Giftbox::before {
+  content: '\EC1F'
+}
+
+.icon-GiftboxOpen::before {
+  content: '\F133'
+}
+
+.icon-GiftBoxSolid::before {
+  content: '\F341'
+}
+
+.icon-GiftCard::before {
+  content: '\EB8E'
+}
+
+.icon-GitGraph::before {
+  content: '\F2CA'
+}
+
+.icon-Glasses::before {
+  content: '\EA16'
+}
+
+.icon-Glimmer::before {
+  content: '\ECF4'
+}
+
+.icon-GlobalNavButton::before {
+  content: '\E700'
+}
+
+.icon-Globe::before {
+  content: '\E774'
+}
+
+.icon-Globe2::before {
+  content: '\F49A'
+}
+
+.icon-GlobeFavorite::before {
+  content: '\EF53'
+}
+
+.icon-Golf::before {
+  content: '\EB1F'
+}
+
+.icon-GoogleDriveLogo::before {
+  content: '\EE0B'
+}
+
+.icon-GoogleDriveLogoBottomBlue::before {
+  content: '\F375'
+}
+
+.icon-GoogleDriveLogoLeftGreen::before {
+  content: '\F374'
+}
+
+.icon-GoogleDriveLogoRightYellow::before {
+  content: '\F376'
+}
+
+.icon-GotoToday::before {
+  content: '\E8D1'
+}
+
+.icon-GridViewLarge::before {
+  content: '\F234'
+}
+
+.icon-GridViewMedium::before {
+  content: '\F233'
+}
+
+.icon-GridViewSmall::before {
+  content: '\F232'
+}
+
+.icon-GripperBarHorizontal::before {
+  content: '\E76F'
+}
+
+.icon-GripperBarVertical::before {
+  content: '\E784'
+}
+
+.icon-GripperTool::before {
+  content: '\E75E'
+}
+
+.icon-Group::before {
+  content: '\E902'
+}
+
+.icon-GroupedAscending::before {
+  content: '\EE67'
+}
+
+.icon-GroupedDescending::before {
+  content: '\EE66'
+}
+
+.icon-GroupedList::before {
+  content: '\EF74'
+}
+
+.icon-Guitar::before {
+  content: '\F49B'
+}
+
+.icon-HailDay::before {
+  content: '\EA00'
+}
+
+.icon-HailNight::before {
+  content: '\EA13'
+}
+
+.icon-HalfAlpha::before {
+  content: '\E97E'
+}
+
+.icon-Handwriting::before {
+  content: '\E929'
+}
+
+.icon-HardDriveGroup::before {
+  content: '\F18F'
+}
+
+.icon-Header1::before {
+  content: '\EA19'
+}
+
+.icon-Header2::before {
+  content: '\EF36'
+}
+
+.icon-Header3::before {
+  content: '\EF37'
+}
+
+.icon-Header4::before {
+  content: '\EF38'
+}
+
+.icon-Headset::before {
+  content: '\E95B'
+}
+
+.icon-HeadsetSolid::before {
+  content: '\F348'
+}
+
+.icon-Health::before {
+  content: '\E95E'
+}
+
+.icon-HealthSolid::before {
+  content: '\F33F'
+}
+
+.icon-Heart::before {
+  content: '\EB51'
+}
+
+.icon-HeartFill::before {
+  content: '\EB52'
+}
+
+.icon-Help::before {
+  content: '\E897'
+}
+
+.icon-HelpMirrored::before {
+  content: '\EA51'
+}
+
+.icon-Hide::before {
+  content: '\ED1A'
+}
+
+.icon-Hide2::before {
+  content: '\EF89'
+}
+
+.icon-Highlight::before {
+  content: '\E7E6'
+}
+
+.icon-HighlightMappedShapes::before {
+  content: '\F2A1'
+}
+
+.icon-History::before {
+  content: '\E81C'
+}
+
+.icon-Home::before {
+  content: '\E80F'
+}
+
+.icon-HomeSolid::before {
+  content: '\EA8A'
+}
+
+.icon-Hospital::before {
+  content: '\E91D'
+}
+
+.icon-Hotel::before {
+  content: '\E824'
+}
+
+.icon-IconSetsFlag::before {
+  content: '\F2A4'
+}
+
+.icon-IDBadge::before {
+  content: '\F427'
+}
+
+.icon-ImageCrosshair::before {
+  content: '\F2C9'
+}
+
+.icon-ImageDiff::before {
+  content: '\F30B'
+}
+
+.icon-ImagePixel::before {
+  content: '\F30C'
+}
+
+.icon-Import::before {
+  content: '\E8B5'
+}
+
+.icon-Important::before {
+  content: '\E8C9'
+}
+
+.icon-ImportMirrored::before {
+  content: '\EA52'
+}
+
+.icon-Inbox::before {
+  content: '\F41C'
+}
+
+.icon-InboxCheck::before {
+  content: '\EF64'
+}
+
+.icon-IncidentTriangle::before {
+  content: '\E814'
+}
+
+.icon-IncreaseIndentLegacy::before {
+  content: '\E291'
+}
+
+.icon-Info::before {
+  content: '\E946'
+}
+
+.icon-Info2::before {
+  content: '\EA1F'
+}
+
+.icon-InfoSolid::before {
+  content: '\F167'
+}
+
+.icon-InsertTextBox::before {
+  content: '\EC7D'
+}
+
+.icon-InstallToDrive::before {
+  content: '\F28D'
+}
+
+.icon-InternetSharing::before {
+  content: '\E704'
+}
+
+.icon-iOSAppStoreLogo::before {
+  content: '\EF8A'
+}
+
+.icon-IRMForward::before {
+  content: '\F41F'
+}
+
+.icon-IRMForwardMirrored::before {
+  content: '\F420'
+}
+
+.icon-IRMReply::before {
+  content: '\F41D'
+}
+
+.icon-IRMReplyMirrored::before {
+  content: '\F41E'
+}
+
+.icon-IssueSolid::before {
+  content: '\F448'
+}
+
+.icon-IssueTracking::before {
+  content: '\EEC0'
+}
+
+.icon-IssueTrackingMirrored::before {
+  content: '\EEC1'
+}
+
+.icon-Italic::before {
+  content: '\E8DB'
+}
+
+.icon-JavaScriptLanguage::before {
+  content: '\F2EE'
+}
+
+.icon-JoinOnlineMeeting::before {
+  content: '\ED8F'
+}
+
+.icon-JS::before {
+  content: '\EBF0'
+}
+
+.icon-KaizalaLogo::before {
+  content: '\F492'
+}
+
+.icon-Label::before {
+  content: '\E932'
+}
+
+.icon-LadybugSolid::before {
+  content: '\F44A'
+}
+
+.icon-LandscapeOrientation::before {
+  content: '\EF6B'
+}
+
+.icon-LaptopSelected::before {
+  content: '\EC76'
+}
+
+.icon-LargeGrid::before {
+  content: '\EECB'
+}
+
+.icon-Library::before {
+  content: '\E8F1'
+}
+
+.icon-Lifesaver::before {
+  content: '\EF62'
+}
+
+.icon-LifesaverLock::before {
+  content: '\EF63'
+}
+
+.icon-Light::before {
+  content: '\E793'
+}
+
+.icon-Lightbulb::before {
+  content: '\EA80'
+}
+
+.icon-LightningBolt::before {
+  content: '\E945'
+}
+
+.icon-Like::before {
+  content: '\E8E1'
+}
+
+.icon-LikeSolid::before {
+  content: '\F3BF'
+}
+
+.icon-LineChart::before {
+  content: '\E9E6'
+}
+
+.icon-Link::before {
+  content: '\E71B'
+}
+
+.icon-LinkedInLogo::before {
+  content: '\F20A'
+}
+
+.icon-List::before {
+  content: '\EA37'
+}
+
+.icon-ListMirrored::before {
+  content: '\EA55'
+}
+
+.icon-LocaleLanguage::before {
+  content: '\F2B7'
+}
+
+.icon-Location::before {
+  content: '\E81D'
+}
+
+.icon-LocationCircle::before {
+  content: '\E80E'
+}
+
+.icon-LocationDot::before {
+  content: '\E827'
+}
+
+.icon-LocationFill::before {
+  content: '\E920'
+}
+
+.icon-LocationOutline::before {
+  content: '\F2D0'
+}
+
+.icon-Lock::before {
+  content: '\E72E'
+}
+
+.icon-LockSolid::before {
+  content: '\E9A2'
+}
+
+.icon-LogRemove::before {
+  content: '\F316'
+}
+
+.icon-LowerBrightness::before {
+  content: '\EC8A'
+}
+
+.icon-LyncLogo::before {
+  content: '\ED79'
+}
+
+.icon-Mail::before {
+  content: '\E715'
+}
+
+.icon-MailAlert::before {
+  content: '\ED80'
+}
+
+.icon-MailCheck::before {
+  content: '\ED81'
+}
+
+.icon-MailFill::before {
+  content: '\E8A8'
+}
+
+.icon-MailForward::before {
+  content: '\E89C'
+}
+
+.icon-MailForwardMirrored::before {
+  content: '\EA56'
+}
+
+.icon-MailLowImportance::before {
+  content: '\ED82'
+}
+
+.icon-MailPause::before {
+  content: '\ED83'
+}
+
+.icon-MailReminder::before {
+  content: '\F418'
+}
+
+.icon-MailRepeat::before {
+  content: '\ED84'
+}
+
+.icon-MailReply::before {
+  content: '\E8CA'
+}
+
+.icon-MailReplyAll::before {
+  content: '\E8C2'
+}
+
+.icon-MailReplyAllMirrored::before {
+  content: '\EA58'
+}
+
+.icon-MailReplyMirrored::before {
+  content: '\EA57'
+}
+
+.icon-MailSolid::before {
+  content: '\F343'
+}
+
+.icon-MailTentative::before {
+  content: '\F416'
+}
+
+.icon-MailTentativeMirrored::before {
+  content: '\F417'
+}
+
+.icon-MailUndelivered::before {
+  content: '\F415'
+}
+
+.icon-MapDirections::before {
+  content: '\E816'
+}
+
+.icon-MapPin::before {
+  content: '\E707'
+}
+
+.icon-MarkDownLanguage::before {
+  content: '\F2FB'
+}
+
+.icon-Market::before {
+  content: '\EAFC'
+}
+
+.icon-MarketDown::before {
+  content: '\EF42'
+}
+
+.icon-Medical::before {
+  content: '\EAD4'
+}
+
+.icon-Megaphone::before {
+  content: '\E789'
+}
+
+.icon-MegaphoneSolid::before {
+  content: '\F332'
+}
+
+.icon-Memo::before {
+  content: '\E77C'
+}
+
+.icon-Merge::before {
+  content: '\E7D5'
+}
+
+.icon-MergeDuplicate::before {
+  content: '\F29A'
+}
+
+.icon-Message::before {
+  content: '\E8BD'
+}
+
+.icon-MessageFill::before {
+  content: '\EC70'
+}
+
+.icon-MicOff::before {
+  content: '\EC54'
+}
+
+.icon-Microphone::before {
+  content: '\E720'
+}
+
+.icon-MicrosoftFlowLogo::before {
+  content: '\F4B1'
+}
+
+.icon-MicrosoftStaffhubLogo::before {
+  content: '\F130'
+}
+
+.icon-MiniLink::before {
+  content: '\E732'
+}
+
+.icon-MobileSelected::before {
+  content: '\EC75'
+}
+
+.icon-Money::before {
+  content: '\EAFD'
+}
+
+.icon-More::before {
+  content: '\E712'
+}
+
+.icon-MoreSports::before {
+  content: '\EB22'
+}
+
+.icon-MoreVertical::before {
+  content: '\F2BC'
+}
+
+.icon-Move::before {
+  content: '\E7C2'
+}
+
+.icon-MoveToFolder::before {
+  content: '\E8DE'
+}
+
+.icon-MSNLogo::before {
+  content: '\EB6C'
+}
+
+.icon-MSNVideos::before {
+  content: '\EB1C'
+}
+
+.icon-MSNVideosSolid::before {
+  content: '\F2DA'
+}
+
+.icon-MTMLogo::before {
+  content: '\F44B'
+}
+
+.icon-MultiSelect::before {
+  content: '\E762'
+}
+
+.icon-MultiSelectMirrored::before {
+  content: '\EA98'
+}
+
+.icon-MusicInCollection::before {
+  content: '\E940'
+}
+
+.icon-MusicInCollectionFill::before {
+  content: '\EA36'
+}
+
+.icon-MusicNote::before {
+  content: '\EC4F'
+}
+
+.icon-MyMoviesTV::before {
+  content: '\EE6C'
+}
+
+.icon-Nav2DMapView::before {
+  content: '\E800'
+}
+
+.icon-NavigateBack::before {
+  content: '\F2DD'
+}
+
+.icon-NavigateBackMirrored::before {
+  content: '\F2DE'
+}
+
+.icon-NavigateExternalInline::before {
+  content: '\F35F'
+}
+
+.icon-NavigateForward::before {
+  content: '\F2DF'
+}
+
+.icon-NavigateForwardMirrored::before {
+  content: '\F2E0'
+}
+
+.icon-NetworkTower::before {
+  content: '\EC05'
+}
+
+.icon-NewAnalyticsQuery::before {
+  content: '\F1E0'
+}
+
+.icon-NewFolder::before {
+  content: '\E8F4'
+}
+
+.icon-News::before {
+  content: '\E900'
+}
+
+.icon-NewTeamProject::before {
+  content: '\F2B2'
+}
+
+.icon-Next::before {
+  content: '\E893'
+}
+
+.icon-NonprofitLogo32::before {
+  content: '\F495'
+}
+
+.icon-NoteForward::before {
+  content: '\ED99'
+}
+
+.icon-NotePinned::before {
+  content: '\ED9A'
+}
+
+.icon-NoteReply::before {
+  content: '\ED98'
+}
+
+.icon-NotExecuted::before {
+  content: '\F440'
+}
+
+.icon-NotImpactedSolid::before {
+  content: '\F441'
+}
+
+.icon-NugetLogo::before {
+  content: '\F44C'
+}
+
+.icon-NumberedList::before {
+  content: '\EA1C'
+}
+
+.icon-NumberField::before {
+  content: '\EDC4'
+}
+
+.icon-OfficeAddinsLogo::before {
+  content: '\EEC7'
+}
+
+.icon-OfficeAssistantLogo::before {
+  content: '\EDCE'
+}
+
+.icon-OfficeFormsLogo::before {
+  content: '\F434'
+}
+
+.icon-OfficeFormsLogo16::before {
+  content: '\F436'
+}
+
+.icon-OfficeFormsLogo24::before {
+  content: '\F43B'
+}
+
+.icon-OfficeFormsLogoFill::before {
+  content: '\F435'
+}
+
+.icon-OfficeFormsLogoFill16::before {
+  content: '\F437'
+}
+
+.icon-OfficeFormsLogoFill24::before {
+  content: '\F43C'
+}
+
+.icon-OfficeFormsLogoInverse::before {
+  content: '\EF86'
+}
+
+.icon-OfficeFormsLogoInverse16::before {
+  content: '\F433'
+}
+
+.icon-OfficeFormsLogoInverse24::before {
+  content: '\F43A'
+}
+
+.icon-OfficeLogo::before {
+  content: '\EB6E'
+}
+
+.icon-OfficeStoreLogo::before {
+  content: '\EDCF'
+}
+
+.icon-OfficeVideoLogo::before {
+  content: '\F282'
+}
+
+.icon-OfficeVideoLogoFill::before {
+  content: '\F283'
+}
+
+.icon-OfficeVideoLogoInverse::before {
+  content: '\ED7A'
+}
+
+.icon-OfflineOneDriveParachute::before {
+  content: '\EEC8'
+}
+
+.icon-OfflineOneDriveParachuteDisabled::before {
+  content: '\EEC9'
+}
+
+.icon-OfflineStorageSolid::before {
+  content: '\F34E'
+}
+
+.icon-OneDrive::before {
+  content: '\E941'
+}
+
+.icon-OneDriveAdd::before {
+  content: '\EF32'
+}
+
+.icon-OneNoteEduLogoInverse::before {
+  content: '\EDD0'
+}
+
+.icon-OneNoteLogo::before {
+  content: '\F1E7'
+}
+
+.icon-OneNoteLogo16::before {
+  content: '\F39A'
+}
+
+.icon-OneNoteLogoFill::before {
+  content: '\F1E8'
+}
+
+.icon-OneNoteLogoFill16::before {
+  content: '\F39B'
+}
+
+.icon-OneNoteLogoInverse::before {
+  content: '\EC0D'
+}
+
+.icon-OneNoteLogoInverse16::before {
+  content: '\F399'
+}
+
+.icon-OpenFile::before {
+  content: '\E8E5'
+}
+
+.icon-OpenFolderHorizontal::before {
+  content: '\ED25'
+}
+
+.icon-OpenInNewWindow::before {
+  content: '\E8A7'
+}
+
+.icon-OpenPane::before {
+  content: '\E8A0'
+}
+
+.icon-OpenPaneMirrored::before {
+  content: '\EA5B'
+}
+
+.icon-OpenSource::before {
+  content: '\EBC2'
+}
+
+.icon-Org::before {
+  content: '\ECA6'
+}
+
+.icon-OutlookLogo::before {
+  content: '\F1E9'
+}
+
+.icon-OutlookLogo16::before {
+  content: '\F39D'
+}
+
+.icon-OutlookLogoFill::before {
+  content: '\F1EA'
+}
+
+.icon-OutlookLogoFill16::before {
+  content: '\F39E'
+}
+
+.icon-OutlookLogoInverse::before {
+  content: '\EB6D'
+}
+
+.icon-OutlookLogoInverse16::before {
+  content: '\F39C'
+}
+
+.icon-OutOfOffice::before {
+  content: '\ED34'
+}
+
+.icon-Package::before {
+  content: '\E7B8'
+}
+
+.icon-Packages::before {
+  content: '\F318'
+}
+
+.icon-Page::before {
+  content: '\E7C3'
+}
+
+.icon-PageAdd::before {
+  content: '\EA1A'
+}
+
+.icon-PageCheckedin::before {
+  content: '\F104'
+}
+
+.icon-PageCheckedOut::before {
+  content: '\F02C'
+}
+
+.icon-PageEdit::before {
+  content: '\EFB6'
+}
+
+.icon-PageLeft::before {
+  content: '\E760'
+}
+
+.icon-PageListMirroredSolid::before {
+  content: '\F33B'
+}
+
+.icon-PageListSolid::before {
+  content: '\F33A'
+}
+
+.icon-PageLock::before {
+  content: '\F43F'
+}
+
+.icon-PageRight::before {
+  content: '\E761'
+}
+
+.icon-PageSolid::before {
+  content: '\E729'
+}
+
+.icon-PanoIndicator::before {
+  content: '\E7B0'
+}
+
+.icon-Parachute::before {
+  content: '\F351'
+}
+
+.icon-ParachuteSolid::before {
+  content: '\F352'
+}
+
+.icon-Parameter::before {
+  content: '\F306'
+}
+
+.icon-ParatureLogo::before {
+  content: '\ED7B'
+}
+
+.icon-ParkingLocation::before {
+  content: '\E811'
+}
+
+.icon-ParkingLocationMirrored::before {
+  content: '\EA5E'
+}
+
+.icon-ParkingMirroredSolid::before {
+  content: '\F34B'
+}
+
+.icon-ParkingSolid::before {
+  content: '\F34A'
+}
+
+.icon-PartlyCloudyDay::before {
+  content: '\E9C0'
+}
+
+.icon-PartlyCloudyNight::before {
+  content: '\E9C1'
+}
+
+.icon-PartyLeader::before {
+  content: '\ECA7'
+}
+
+.icon-Paste::before {
+  content: '\E77F'
+}
+
+.icon-Pause::before {
+  content: '\E769'
+}
+
+.icon-PaymentCard::before {
+  content: '\E8C7'
+}
+
+.icon-PC1::before {
+  content: '\E977'
+}
+
+.icon-PDF::before {
+  content: '\EA90'
+}
+
+.icon-PencilReply::before {
+  content: '\EF7B'
+}
+
+.icon-People::before {
+  content: '\E716'
+}
+
+.icon-PeopleAdd::before {
+  content: '\EA15'
+}
+
+.icon-PeopleAlert::before {
+  content: '\ED93'
+}
+
+.icon-PeopleBlock::before {
+  content: '\ED91'
+}
+
+.icon-PeoplePause::before {
+  content: '\ED94'
+}
+
+.icon-PeopleRepeat::before {
+  content: '\ED92'
+}
+
+.icon-Permissions::before {
+  content: '\E8D7'
+}
+
+.icon-PermissionsSolid::before {
+  content: '\F349'
+}
+
+.icon-Personalize::before {
+  content: '\E771'
+}
+
+.icon-Phone::before {
+  content: '\E717'
+}
+
+.icon-Photo2::before {
+  content: '\EB9F'
+}
+
+.icon-Photo2Add::before {
+  content: '\ECAB'
+}
+
+.icon-Photo2Remove::before {
+  content: '\ECAC'
+}
+
+.icon-PhotoCollection::before {
+  content: '\E7AA'
+}
+
+.icon-Picture::before {
+  content: '\E8B9'
+}
+
+.icon-PictureLibrary::before {
+  content: '\EEC2'
+}
+
+.icon-PieDouble::before {
+  content: '\EB04'
+}
+
+.icon-PieSingle::before {
+  content: '\EB05'
+}
+
+.icon-Pill::before {
+  content: '\EACB'
+}
+
+.icon-Pin::before {
+  content: '\E718'
+}
+
+.icon-Pinned::before {
+  content: '\E840'
+}
+
+.icon-PinnedFill::before {
+  content: '\E842'
+}
+
+.icon-PivotChart::before {
+  content: '\F24C'
+}
+
+.icon-PlannerLogo::before {
+  content: '\EDD1'
+}
+
+.icon-PlanView::before {
+  content: '\F360'
+}
+
+.icon-Play::before {
+  content: '\E768'
+}
+
+.icon-PlayerSettings::before {
+  content: '\EF58'
+}
+
+.icon-PlayResume::before {
+  content: '\F2C6'
+}
+
+.icon-Plug::before {
+  content: '\F300'
+}
+
+.icon-PlugConnected::before {
+  content: '\F302'
+}
+
+.icon-PlugDisconnected::before {
+  content: '\F303'
+}
+
+.icon-PlugSolid::before {
+  content: '\F301'
+}
+
+.icon-POI::before {
+  content: '\ECAF'
+}
+
+.icon-POISolid::before {
+  content: '\F2D1'
+}
+
+.icon-PostUpdate::before {
+  content: '\E8F3'
+}
+
+.icon-PowerApps::before {
+  content: '\EDD2'
+}
+
+.icon-PowerApps2Logo::before {
+  content: '\F092'
+}
+
+.icon-PowerAppsLogo::before {
+  content: '\F091'
+}
+
+.icon-PowerBILogo::before {
+  content: '\EA1E'
+}
+
+.icon-PowerPointDocument::before {
+  content: '\EF72'
+}
+
+.icon-PowerPointLogo::before {
+  content: '\F1EB'
+}
+
+.icon-PowerPointLogo16::before {
+  content: '\F394'
+}
+
+.icon-PowerPointLogoFill::before {
+  content: '\F1EC'
+}
+
+.icon-PowerPointLogoFill16::before {
+  content: '\F395'
+}
+
+.icon-PowerPointLogoInverse::before {
+  content: '\EC2A'
+}
+
+.icon-PowerPointLogoInverse16::before {
+  content: '\F393'
+}
+
+.icon-Precipitation::before {
+  content: '\E9CF'
+}
+
+.icon-PresenceChickletVideo::before {
+  content: '\E979'
+}
+
+.icon-Preview::before {
+  content: '\E8FF'
+}
+
+.icon-PreviewLink::before {
+  content: '\E8A1'
+}
+
+.icon-Previous::before {
+  content: '\E892'
+}
+
+.icon-PrimaryCalendar::before {
+  content: '\F4AE'
+}
+
+.icon-Print::before {
+  content: '\E749'
+}
+
+.icon-PrintfaxPrinterFile::before {
+  content: '\E956'
+}
+
+.icon-Processing::before {
+  content: '\E9F5'
+}
+
+.icon-ProcessMetaTask::before {
+  content: '\F290'
+}
+
+.icon-Product::before {
+  content: '\ECDC'
+}
+
+.icon-ProFootball::before {
+  content: '\EB27'
+}
+
+.icon-ProgressLoopInner::before {
+  content: '\ECDE'
+}
+
+.icon-ProgressLoopOuter::before {
+  content: '\ECDF'
+}
+
+.icon-ProgressRingDots::before {
+  content: '\F16A'
+}
+
+.icon-ProHockey::before {
+  content: '\EB28'
+}
+
+.icon-ProjectCollection::before {
+  content: '\F363'
+}
+
+.icon-ProjectLogo16::before {
+  content: '\F480'
+}
+
+.icon-ProjectLogo32::before {
+  content: '\F47E'
+}
+
+.icon-ProjectLogoFill16::before {
+  content: '\F481'
+}
+
+.icon-ProjectLogoFill32::before {
+  content: '\F47F'
+}
+
+.icon-ProjectLogoInverse::before {
+  content: '\EDD4'
+}
+
+.icon-ProtectedDocument::before {
+  content: '\E8A6'
+}
+
+.icon-ProtectionCenterLogo32::before {
+  content: '\F494'
+}
+
+.icon-ProtectRestrict::before {
+  content: '\F22A'
+}
+
+.icon-PublicCalendar::before {
+  content: '\EF6D'
+}
+
+.icon-PublicContactCard::before {
+  content: '\EF6E'
+}
+
+.icon-PublicEmail::before {
+  content: '\EF6F'
+}
+
+.icon-PublicFolder::before {
+  content: '\EF70'
+}
+
+.icon-PublisherLogo::before {
+  content: '\F1ED'
+}
+
+.icon-PublisherLogo16::before {
+  content: '\F3A0'
+}
+
+.icon-PublisherLogoFill::before {
+  content: '\F1EE'
+}
+
+.icon-PublisherLogoFill16::before {
+  content: '\F3A1'
+}
+
+.icon-PublisherLogoInverse16::before {
+  content: '\F39F'
+}
+
+.icon-Puzzle::before {
+  content: '\EA86'
+}
+
+.icon-PY::before {
+  content: '\F2F9'
+}
+
+.icon-PythonLanguage::before {
+  content: '\F2F8'
+}
+
+.icon-QueryList::before {
+  content: '\F2B8'
+}
+
+.icon-Questionnaire::before {
+  content: '\EE19'
+}
+
+.icon-QuestionnaireMirrored::before {
+  content: '\EE4B'
+}
+
+.icon-QuickNote::before {
+  content: '\E70B'
+}
+
+.icon-QuickNoteSolid::before {
+  content: '\F338'
+}
+
+.icon-RadioBtnOff::before {
+  content: '\ECCA'
+}
+
+.icon-RadioBtnOn::before {
+  content: '\ECCB'
+}
+
+.icon-RadioBullet::before {
+  content: '\E915'
+}
+
+.icon-Rain::before {
+  content: '\E9C4'
+}
+
+.icon-RainShowersDay::before {
+  content: '\E9C3'
+}
+
+.icon-RainShowersNight::before {
+  content: '\EA0F'
+}
+
+.icon-RainSnow::before {
+  content: '\E9C7'
+}
+
+.icon-RawSource::before {
+  content: '\F299'
+}
+
+.icon-Read::before {
+  content: '\E8C3'
+}
+
+.icon-ReadingMode::before {
+  content: '\E736'
+}
+
+.icon-ReadingModeSolid::before {
+  content: '\F33D'
+}
+
+.icon-ReceiptCheck::before {
+  content: '\EF5B'
+}
+
+.icon-ReceiptForward::before {
+  content: '\EF59'
+}
+
+.icon-ReceiptReply::before {
+  content: '\EF5A'
+}
+
+.icon-ReceiptTentative::before {
+  content: '\F41A'
+}
+
+.icon-ReceiptTentativeMirrored::before {
+  content: '\F41B'
+}
+
+.icon-ReceiptUndelivered::before {
+  content: '\F419'
+}
+
+.icon-Recent::before {
+  content: '\E823'
+}
+
+.icon-Record2::before {
+  content: '\EA3F'
+}
+
+.icon-RecurringEvent::before {
+  content: '\EF5D'
+}
+
+.icon-RecurringTask::before {
+  content: '\EDB2'
+}
+
+.icon-RecycleBin::before {
+  content: '\EF87'
+}
+
+.icon-Redeploy::before {
+  content: '\F29E'
+}
+
+.icon-RedEye::before {
+  content: '\E7B3'
+}
+
+.icon-Redo::before {
+  content: '\E7A6'
+}
+
+.icon-Refresh::before {
+  content: '\E72C'
+}
+
+.icon-ReminderGroup::before {
+  content: '\EBF8'
+}
+
+.icon-ReminderPerson::before {
+  content: '\EBF7'
+}
+
+.icon-Remove::before {
+  content: '\E738'
+}
+
+.icon-RemoveEvent::before {
+  content: '\ED8A'
+}
+
+.icon-RemoveFilter::before {
+  content: '\EB08'
+}
+
+.icon-RemoveLink::before {
+  content: '\ED90'
+}
+
+.icon-RemoveOccurrence::before {
+  content: '\ED9B'
+}
+
+.icon-Rename::before {
+  content: '\E8AC'
+}
+
+.icon-ReopenPages::before {
+  content: '\ED50'
+}
+
+.icon-Repair::before {
+  content: '\E90F'
+}
+
+.icon-Reply::before {
+  content: '\E97A'
+}
+
+.icon-ReplyAll::before {
+  content: '\EE0A'
+}
+
+.icon-ReplyAllAlt::before {
+  content: '\EF5F'
+}
+
+.icon-ReplyAllMirrored::before {
+  content: '\EE36'
+}
+
+.icon-ReplyAlt::before {
+  content: '\EF5E'
+}
+
+.icon-ReplyMirrored::before {
+  content: '\EE35'
+}
+
+.icon-Repo::before {
+  content: '\F2CB'
+}
+
+.icon-ReportLibrary::before {
+  content: '\EEBB'
+}
+
+.icon-ReportLibraryMirrored::before {
+  content: '\EEBC'
+}
+
+.icon-RepoSolid::before {
+  content: '\F2CC'
+}
+
+.icon-ReturnToSession::before {
+  content: '\ED24'
+}
+
+.icon-ReviewRequestMirroredSolid::before {
+  content: '\F357'
+}
+
+.icon-ReviewRequestSolid::before {
+  content: '\F356'
+}
+
+.icon-ReviewResponseSolid::before {
+  content: '\F358'
+}
+
+.icon-ReviewSolid::before {
+  content: '\F355'
+}
+
+.icon-RevToggleKey::before {
+  content: '\E845'
+}
+
+.icon-Rewind::before {
+  content: '\EB9E'
+}
+
+.icon-Ribbon::before {
+  content: '\E9D1'
+}
+
+.icon-RibbonSolid::before {
+  content: '\F345'
+}
+
+.icon-RightDoubleQuote::before {
+  content: '\E9B1'
+}
+
+.icon-Ringer::before {
+  content: '\EA8F'
+}
+
+.icon-RingerOff::before {
+  content: '\F2C5'
+}
+
+.icon-Robot::before {
+  content: '\E99A'
+}
+
+.icon-Rocket::before {
+  content: '\F3B3'
+}
+
+.icon-Room::before {
+  content: '\ED9F'
+}
+
+.icon-Rotate::before {
+  content: '\E7AD'
+}
+
+.icon-RowsChild::before {
+  content: '\F29C'
+}
+
+.icon-RowsGroup::before {
+  content: '\F29B'
+}
+
+.icon-Rugby::before {
+  content: '\EB2D'
+}
+
+.icon-Running::before {
+  content: '\EADA'
+}
+
+.icon-Sad::before {
+  content: '\E757'
+}
+
+.icon-SadSolid::before {
+  content: '\F33E'
+}
+
+.icon-Save::before {
+  content: '\E74E'
+}
+
+.icon-SaveAll::before {
+  content: '\F203'
+}
+
+.icon-SaveAndClose::before {
+  content: '\F038'
+}
+
+.icon-SaveAs::before {
+  content: '\E792'
+}
+
+.icon-Savings::before {
+  content: '\EB0B'
+}
+
+.icon-ScheduleEventAction::before {
+  content: '\F1EF'
+}
+
+.icon-ScopeTemplate::before {
+  content: '\F2B0'
+}
+
+.icon-Script::before {
+  content: '\F03A'
+}
+
+.icon-ScrollUpDown::before {
+  content: '\EC8F'
+}
+
+.icon-Search::before {
+  content: '\E721'
+}
+
+.icon-SearchAndApps::before {
+  content: '\E773'
+}
+
+.icon-SearchCalendar::before {
+  content: '\F4AF'
+}
+
+.icon-SearchIssue::before {
+  content: '\F09A'
+}
+
+.icon-SearchIssueMirrored::before {
+  content: '\F09B'
+}
+
+.icon-Section::before {
+  content: '\EC0C'
+}
+
+.icon-Sections::before {
+  content: '\EF76'
+}
+
+.icon-SecurityGroup::before {
+  content: '\ED85'
+}
+
+.icon-Send::before {
+  content: '\E724'
+}
+
+.icon-SendMirrored::before {
+  content: '\EA63'
+}
+
+.icon-Separator::before {
+  content: '\F35E'
+}
+
+.icon-Server::before {
+  content: '\F201'
+}
+
+.icon-ServerEnviroment::before {
+  content: '\F29F'
+}
+
+.icon-ServerProcesses::before {
+  content: '\F1FE'
+}
+
+.icon-SetAction::before {
+  content: '\F071'
+}
+
+.icon-Settings::before {
+  content: '\E713'
+}
+
+.icon-Share::before {
+  content: '\E72D'
+}
+
+.icon-ShareiOS::before {
+  content: '\EF79'
+}
+
+.icon-SharepointLogo::before {
+  content: '\F27E'
+}
+
+.icon-SharepointLogoFill::before {
+  content: '\F27F'
+}
+
+.icon-SharepointLogoInverse::before {
+  content: '\ED18'
+}
+
+.icon-Shield::before {
+  content: '\EA18'
+}
+
+.icon-ShieldSolid::before {
+  content: '\F340'
+}
+
+.icon-Shop::before {
+  content: '\E719'
+}
+
+.icon-ShoppingCart::before {
+  content: '\E7BF'
+}
+
+.icon-ShoppingCartSolid::before {
+  content: '\F342'
+}
+
+.icon-ShopServer::before {
+  content: '\F2B6'
+}
+
+.icon-ShowResults::before {
+  content: '\E8BC'
+}
+
+.icon-ShowResultsMirrored::before {
+  content: '\EA65'
+}
+
+.icon-SidePanel::before {
+  content: '\EF52'
+}
+
+.icon-SidePanelMirrored::before {
+  content: '\F221'
+}
+
+.icon-SignOut::before {
+  content: '\F3B1'
+}
+
+.icon-SingleBookmark::before {
+  content: '\EDFF'
+}
+
+.icon-SingleColumn::before {
+  content: '\F1D3'
+}
+
+.icon-SingleColumnEdit::before {
+  content: '\F321'
+}
+
+.icon-SIPMove::before {
+  content: '\E759'
+}
+
+.icon-SkiResorts::before {
+  content: '\EB45'
+}
+
+.icon-SkypeCheck::before {
+  content: '\EF80'
+}
+
+.icon-SkypeCircleCheck::before {
+  content: '\EF7D'
+}
+
+.icon-SkypeCircleClock::before {
+  content: '\EF7E'
+}
+
+.icon-SkypeCircleMinus::before {
+  content: '\EF7F'
+}
+
+.icon-SkypeClock::before {
+  content: '\EF81'
+}
+
+.icon-SkypeForBusinessLogo::before {
+  content: '\F0FC'
+}
+
+.icon-SkypeForBusinessLogo16::before {
+  content: '\F40F'
+}
+
+.icon-SkypeForBusinessLogoFill::before {
+  content: '\F27D'
+}
+
+.icon-SkypeForBusinessLogoFill16::before {
+  content: '\F410'
+}
+
+.icon-SkypeLogo::before {
+  content: '\EB6F'
+}
+
+.icon-SkypeLogo16::before {
+  content: '\F40E'
+}
+
+.icon-SkypeMessage::before {
+  content: '\EF83'
+}
+
+.icon-SkypeMinus::before {
+  content: '\EF82'
+}
+
+.icon-SliderThumb::before {
+  content: '\EC13'
+}
+
+.icon-Snooze::before {
+  content: '\F4BD'
+}
+
+.icon-Snow::before {
+  content: '\E9C8'
+}
+
+.icon-Snowflake::before {
+  content: '\EB46'
+}
+
+.icon-SnowShowerDay::before {
+  content: '\E9FD'
+}
+
+.icon-SnowShowerNight::before {
+  content: '\EA11'
+}
+
+.icon-Soccer::before {
+  content: '\EB21'
+}
+
+.icon-SocialListeningLogo::before {
+  content: '\ED7C'
+}
+
+.icon-Sort::before {
+  content: '\E8CB'
+}
+
+.icon-SortDown::before {
+  content: '\EE69'
+}
+
+.icon-SortLines::before {
+  content: '\E9D0'
+}
+
+.icon-SortUp::before {
+  content: '\EE68'
+}
+
+.icon-Spacer::before {
+  content: '\F40D'
+}
+
+.icon-Speakers::before {
+  content: '\E7F5'
+}
+
+.icon-SpeedHigh::before {
+  content: '\EC4A'
+}
+
+.icon-Split::before {
+  content: '\EDBC'
+}
+
+.icon-Sprint::before {
+  content: '\F3B0'
+}
+
+.icon-Squalls::before {
+  content: '\E9CC'
+}
+
+.icon-StackedBarChart::before {
+  content: '\F24D'
+}
+
+.icon-StackedLineChart::before {
+  content: '\F24E'
+}
+
+.icon-StackIndicator::before {
+  content: '\E7FF'
+}
+
+.icon-StaffNotebookLogo16::before {
+  content: '\F48E'
+}
+
+.icon-StaffNotebookLogo32::before {
+  content: '\F48C'
+}
+
+.icon-StaffNotebookLogoFill16::before {
+  content: '\F48F'
+}
+
+.icon-StaffNotebookLogoFill32::before {
+  content: '\F48D'
+}
+
+.icon-StaffNotebookLogoInverted16::before {
+  content: '\F491'
+}
+
+.icon-StaffNotebookLogoInverted32::before {
+  content: '\F490'
+}
+
+.icon-Starburst::before {
+  content: '\EF78'
+}
+
+.icon-StarburstSolid::before {
+  content: '\F33C'
+}
+
+.icon-StatusCircleCheckmark::before {
+  content: '\F13E'
+}
+
+.icon-StatusCircleInner::before {
+  content: '\F137'
+}
+
+.icon-StatusCircleOuter::before {
+  content: '\F136'
+}
+
+.icon-StatusErrorFull::before {
+  content: '\EB90'
+}
+
+.icon-StatusTriangle::before {
+  content: '\EA82'
+}
+
+.icon-Step::before {
+  content: '\F241'
+}
+
+.icon-StepInsert::before {
+  content: '\F242'
+}
+
+.icon-StepShared::before {
+  content: '\F243'
+}
+
+.icon-StepSharedAdd::before {
+  content: '\F244'
+}
+
+.icon-StepSharedInsert::before {
+  content: '\F245'
+}
+
+.icon-StockDown::before {
+  content: '\EB0F'
+}
+
+.icon-StockUp::before {
+  content: '\EB11'
+}
+
+.icon-Stop::before {
+  content: '\E71A'
+}
+
+.icon-StopSolid::before {
+  content: '\EE95'
+}
+
+.icon-Stopwatch::before {
+  content: '\E916'
+}
+
+.icon-StoreLogo::before {
+  content: '\EA96'
+}
+
+.icon-StoreLogoMed::before {
+  content: '\EA04'
+}
+
+.icon-Storyboard::before {
+  content: '\F308'
+}
+
+.icon-Streaming::before {
+  content: '\E93E'
+}
+
+.icon-StreamingOff::before {
+  content: '\F2BB'
+}
+
+.icon-StreamLogo::before {
+  content: '\F329'
+}
+
+.icon-Strikethrough::before {
+  content: '\EDE0'
+}
+
+.icon-Subscribe::before {
+  content: '\EDA1'
+}
+
+.icon-Subscript::before {
+  content: '\EDDF'
+}
+
+.icon-Suitcase::before {
+  content: '\EDD3'
+}
+
+.icon-SunAdd::before {
+  content: '\EF69'
+}
+
+.icon-Sunny::before {
+  content: '\E9BD'
+}
+
+.icon-SunQuestionMark::before {
+  content: '\EF6A'
+}
+
+.icon-Superscript::before {
+  content: '\EDDE'
+}
+
+.icon-SwayLogo16::before {
+  content: '\F484'
+}
+
+.icon-SwayLogo32::before {
+  content: '\F482'
+}
+
+.icon-SwayLogoFill16::before {
+  content: '\F485'
+}
+
+.icon-SwayLogoFill32::before {
+  content: '\F483'
+}
+
+.icon-SwayLogoInverse::before {
+  content: '\ED29'
+}
+
+.icon-Switch::before {
+  content: '\E8AB'
+}
+
+.icon-SwitcherStartEnd::before {
+  content: '\E810'
+}
+
+.icon-Sync::before {
+  content: '\E895'
+}
+
+.icon-SyncFolder::before {
+  content: '\E8F7'
+}
+
+.icon-SyncOccurence::before {
+  content: '\F4A3'
+}
+
+.icon-SyncToPC::before {
+  content: '\EE6E'
+}
+
+.icon-System::before {
+  content: '\E770'
+}
+
+.icon-Tab::before {
+  content: '\E7E9'
+}
+
+.icon-Table::before {
+  content: '\ED86'
+}
+
+.icon-Tablet::before {
+  content: '\E70A'
+}
+
+.icon-TabletSelected::before {
+  content: '\EC74'
+}
+
+.icon-Tag::before {
+  content: '\E8EC'
+}
+
+.icon-Taskboard::before {
+  content: '\F1C2'
+}
+
+.icon-TaskGroup::before {
+  content: '\F2AE'
+}
+
+.icon-TaskGroupMirrored::before {
+  content: '\F2AF'
+}
+
+.icon-TaskLogo::before {
+  content: '\F493'
+}
+
+.icon-TaskManager::before {
+  content: '\EDB7'
+}
+
+.icon-TaskManagerMirrored::before {
+  content: '\EDB8'
+}
+
+.icon-TaskSolid::before {
+  content: '\F333'
+}
+
+.icon-Taxi::before {
+  content: '\F4A1'
+}
+
+.icon-TeamFavorite::before {
+  content: '\F2AD'
+}
+
+.icon-TeamsLogo::before {
+  content: '\F27B'
+}
+
+.icon-TeamsLogoFill::before {
+  content: '\F27C'
+}
+
+.icon-TeamsLogoInverse::before {
+  content: '\F27A'
+}
+
+.icon-Teamwork::before {
+  content: '\EA12'
+}
+
+.icon-Teeth::before {
+  content: '\F4A0'
+}
+
+.icon-TemporaryUser::before {
+  content: '\EE58'
+}
+
+.icon-Tennis::before {
+  content: '\EB33'
+}
+
+.icon-TestAutoSolid::before {
+  content: '\F3A8'
+}
+
+.icon-TestBeaker::before {
+  content: '\F3A5'
+}
+
+.icon-TestBeakerSolid::before {
+  content: '\F3A6'
+}
+
+.icon-TestCase::before {
+  content: '\F3AF'
+}
+
+.icon-TestExploreSolid::before {
+  content: '\F3A7'
+}
+
+.icon-TestImpactSolid::before {
+  content: '\F3AA'
+}
+
+.icon-TestParameter::before {
+  content: '\F3AD'
+}
+
+.icon-TestPlan::before {
+  content: '\F3AB'
+}
+
+.icon-TestStep::before {
+  content: '\F3AC'
+}
+
+.icon-TestSuite::before {
+  content: '\F3AE'
+}
+
+.icon-TestUserSolid::before {
+  content: '\F3A9'
+}
+
+.icon-TextBox::before {
+  content: '\EDC2'
+}
+
+.icon-TextCallout::before {
+  content: '\F2A2'
+}
+
+.icon-TextDocument::before {
+  content: '\F029'
+}
+
+.icon-TextField::before {
+  content: '\EDC3'
+}
+
+.icon-TFVCLogo::before {
+  content: '\F44D'
+}
+
+.icon-ThisPC::before {
+  content: '\EC4E'
+}
+
+.icon-ThumbnailView::before {
+  content: '\E7B6'
+}
+
+.icon-ThumbnailViewMirrored::before {
+  content: '\EA67'
+}
+
+.icon-Thunderstorms::before {
+  content: '\E9C6'
+}
+
+.icon-Ticket::before {
+  content: '\EB54'
+}
+
+.icon-Tiles::before {
+  content: '\ECA5'
+}
+
+.icon-Tiles2::before {
+  content: '\EF7C'
+}
+
+.icon-Timeline::before {
+  content: '\ED9C'
+}
+
+.icon-TimelineDelivery::before {
+  content: '\F2AB'
+}
+
+.icon-TimelineMatrixView::before {
+  content: '\F361'
+}
+
+.icon-TimelineProgress::before {
+  content: '\F2AA'
+}
+
+.icon-Timer::before {
+  content: '\E91E'
+}
+
+.icon-ToDoLogoBottom::before {
+  content: '\F4B3'
+}
+
+.icon-ToDoLogoInverse::before {
+  content: '\F4BC'
+}
+
+.icon-ToDoLogoTop::before {
+  content: '\F4B4'
+}
+
+.icon-ToggleBorder::before {
+  content: '\EC12'
+}
+
+.icon-ToggleFilled::before {
+  content: '\EC11'
+}
+
+.icon-ToggleThumb::before {
+  content: '\EC14'
+}
+
+.icon-Touch::before {
+  content: '\E815'
+}
+
+.icon-TouchPointer::before {
+  content: '\E7C9'
+}
+
+.icon-Train::before {
+  content: '\E7C0'
+}
+
+.icon-TrainSolid::before {
+  content: '\EB4D'
+}
+
+.icon-TransferCall::before {
+  content: '\ED95'
+}
+
+.icon-TriangleDown12::before {
+  content: '\EED1'
+}
+
+.icon-TriangleLeft12::before {
+  content: '\EED2'
+}
+
+.icon-TriangleRight12::before {
+  content: '\EED3'
+}
+
+.icon-TriangleSolid::before {
+  content: '\EA08'
+}
+
+.icon-TriangleSolidDown12::before {
+  content: '\EECD'
+}
+
+.icon-TriangleSolidLeft12::before {
+  content: '\EECE'
+}
+
+.icon-TriangleSolidRight12::before {
+  content: '\EECF'
+}
+
+.icon-TriangleSolidUp12::before {
+  content: '\EECC'
+}
+
+.icon-TriangleUp12::before {
+  content: '\EED0'
+}
+
+.icon-TriggerApproval::before {
+  content: '\F3B2'
+}
+
+.icon-TriggerAuto::before {
+  content: '\F24A'
+}
+
+.icon-TriggerUser::before {
+  content: '\F24B'
+}
+
+.icon-TripleColumn::before {
+  content: '\F1D5'
+}
+
+.icon-TripleColumnEdit::before {
+  content: '\F323'
+}
+
+.icon-Trophy::before {
+  content: '\ED3F'
+}
+
+.icon-Trophy2Solid::before {
+  content: '\F337'
+}
+
+.icon-TurnRight::before {
+  content: '\E7DB'
+}
+
+.icon-TVMonitor::before {
+  content: '\E7F4'
+}
+
+.icon-TVMonitorSelected::before {
+  content: '\EC77'
+}
+
+.icon-TypeScriptLanguage::before {
+  content: '\F2F7'
+}
+
+.icon-Umbrella::before {
+  content: '\EC04'
+}
+
+.icon-Underline::before {
+  content: '\E8DC'
+}
+
+.icon-Undo::before {
+  content: '\E7A7'
+}
+
+.icon-Uneditable::before {
+  content: '\ED1D'
+}
+
+.icon-UneditableMirrored::before {
+  content: '\F4B9'
+}
+
+.icon-UneditableSolid12::before {
+  content: '\F4B7'
+}
+
+.icon-UneditableSolidMirrored12::before {
+  content: '\F4B8'
+}
+
+.icon-Unfavorite::before {
+  content: '\E8D9'
+}
+
+.icon-Unknown::before {
+  content: '\E9CE'
+}
+
+.icon-UnknownCall::before {
+  content: '\ED97'
+}
+
+.icon-UnknownMirroredSolid::before {
+  content: '\F2E2'
+}
+
+.icon-UnknownSolid::before {
+  content: '\F2E1'
+}
+
+.icon-Unlock::before {
+  content: '\E785'
+}
+
+.icon-UnlockSolid::before {
+  content: '\F304'
+}
+
+.icon-Unpin::before {
+  content: '\E77A'
+}
+
+.icon-Unsubscribe::before {
+  content: '\EDA0'
+}
+
+.icon-UnsyncFolder::before {
+  content: '\E8F6'
+}
+
+.icon-UnsyncOccurence::before {
+  content: '\F4A4'
+}
+
+.icon-Up::before {
+  content: '\E74A'
+}
+
+.icon-Upload::before {
+  content: '\E898'
+}
+
+.icon-UserFollowed::before {
+  content: '\F25C'
+}
+
+.icon-UserPause::before {
+  content: '\F2BA'
+}
+
+.icon-UserSync::before {
+  content: '\F2B9'
+}
+
+.icon-Vacation::before {
+  content: '\F49F'
+}
+
+.icon-Variable::before {
+  content: '\F305'
+}
+
+.icon-VariableGroup::before {
+  content: '\F31B'
+}
+
+.icon-VB::before {
+  content: '\F2F2'
+}
+
+.icon-VennDiagram::before {
+  content: '\F273'
+}
+
+.icon-Video::before {
+  content: '\E714'
+}
+
+.icon-VideoOff::before {
+  content: '\F4B0'
+}
+
+.icon-VideoSolid::before {
+  content: '\EA0C'
+}
+
+.icon-View::before {
+  content: '\E890'
+}
+
+.icon-ViewAll::before {
+  content: '\E8A9'
+}
+
+.icon-ViewAll2::before {
+  content: '\EF56'
+}
+
+.icon-ViewDashboard::before {
+  content: '\F246'
+}
+
+.icon-ViewList::before {
+  content: '\F247'
+}
+
+.icon-ViewListGroup::before {
+  content: '\F248'
+}
+
+.icon-ViewListTree::before {
+  content: '\F249'
+}
+
+.icon-VisioDiagram::before {
+  content: '\F2A0'
+}
+
+.icon-VisioDocument::before {
+  content: '\F2A9'
+}
+
+.icon-VisioLogo::before {
+  content: '\F2A7'
+}
+
+.icon-VisioLogo16::before {
+  content: '\F3A3'
+}
+
+.icon-VisioLogoFill::before {
+  content: '\F2A8'
+}
+
+.icon-VisioLogoFill16::before {
+  content: '\F3A4'
+}
+
+.icon-VisioLogoInverse::before {
+  content: '\ED7D'
+}
+
+.icon-VisioLogoInverse16::before {
+  content: '\F3A2'
+}
+
+.icon-VisualBasicLanguage::before {
+  content: '\F2F1'
+}
+
+.icon-VisualStudioLogo::before {
+  content: '\EC22'
+}
+
+.icon-VoicemailForward::before {
+  content: '\ED87'
+}
+
+.icon-VoicemailIRM::before {
+  content: '\F421'
+}
+
+.icon-VoicemailReply::before {
+  content: '\ED88'
+}
+
+.icon-Volume0::before {
+  content: '\E992'
+}
+
+.icon-Volume1::before {
+  content: '\E993'
+}
+
+.icon-Volume2::before {
+  content: '\E994'
+}
+
+.icon-Volume3::before {
+  content: '\E995'
+}
+
+.icon-VolumeDisabled::before {
+  content: '\EA85'
+}
+
+.icon-VSTSAltLogo1::before {
+  content: '\F382'
+}
+
+.icon-VSTSAltLogo2::before {
+  content: '\F383'
+}
+
+.icon-VSTSLogo::before {
+  content: '\F381'
+}
+
+.icon-Waffle::before {
+  content: '\ED89'
+}
+
+.icon-Warning::before {
+  content: '\E7BA'
+}
+
+.icon-Website::before {
+  content: '\EB41'
+}
+
+.icon-Weights::before {
+  content: '\EADB'
+}
+
+.icon-WifiEthernet::before {
+  content: '\EE77'
+}
+
+.icon-WindDirection::before {
+  content: '\EBE6'
+}
+
+.icon-WindowsLogo::before {
+  content: '\E782'
+}
+
+.icon-Wines::before {
+  content: '\EABF'
+}
+
+.icon-WipePhone::before {
+  content: '\ED8D'
+}
+
+.icon-WordDocument::before {
+  content: '\EF71'
+}
+
+.icon-WordLogo::before {
+  content: '\F1E3'
+}
+
+.icon-WordLogo16::before {
+  content: '\F391'
+}
+
+.icon-WordLogoFill::before {
+  content: '\F1E4'
+}
+
+.icon-WordLogoFill16::before {
+  content: '\F392'
+}
+
+.icon-WordLogoInverse::before {
+  content: '\EC29'
+}
+
+.icon-WordLogoInverse16::before {
+  content: '\F390'
+}
+
+.icon-Work::before {
+  content: '\E821'
+}
+
+.icon-WorkFlow::before {
+  content: '\EA01'
+}
+
+.icon-WorkItem::before {
+  content: '\F314'
+}
+
+.icon-WorkItemBar::before {
+  content: '\F35C'
+}
+
+.icon-WorkItemBarSolid::before {
+  content: '\F35D'
+}
+
+.icon-WorkItemBug::before {
+  content: '\F315'
+}
+
+.icon-World::before {
+  content: '\E909'
+}
+
+.icon-WorldClock::before {
+  content: '\E918'
+}
+
+.icon-YammerLogo::before {
+  content: '\ED19'
+}
+
+.icon-ZipFolder::before {
+  content: '\F012'
+}
+
+.icon-Zoom::before {
+  content: '\E71E'
+}
+
+.icon-ZoomIn::before {
+  content: '\E8A3'
+}
+
+.icon-ZoomOut::before {
+  content: '\E71F'
+}

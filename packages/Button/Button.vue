@@ -3,8 +3,10 @@
     type="button"
     class="button" 
     :class="buttonClass"
+    @click="$emit('click', $event)"
   >
     <span class="button__label">
+      <i :class="['icon', `icon-${icon}`]" v-if="icon"></i>
       <slot></slot>
     </span>
     <span class="button__description" v-if="hasSecondaryText">{{ secondaryText }}</span>
@@ -22,6 +24,10 @@ export default {
     plain: {
       type: Boolean,
       default: false,
+    },
+    icon: {
+      type: String,
+      default: '',
     },
     secondaryText: {
       type: String,

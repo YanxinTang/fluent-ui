@@ -11,7 +11,6 @@ $borderColor: #8a8886;
   text-align: left;
   cursor: pointer;
   padding: 0 16px;
-  min-width: 80px;
   height: 32px;
   background-color: #FFF;
   color: #323130;
@@ -28,9 +27,17 @@ $borderColor: #8a8886;
   }
   
   .button__label {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
     margin: 0;
     font-weight: 600;
-    display: block;
+
+    .icon {
+      margin: 0 4px;
+      color: $primaryColor;
+    }
   }
 
   .button__description {
@@ -40,6 +47,11 @@ $borderColor: #8a8886;
   &:hover {
     background-color: darken($color: #FFF, $amount: 5);
     border-color: lighten($color: $borderColor, $amount: 5);
+  }
+
+  &:active {
+    background-color: darken($color: #FFF, $amount: 10);
+    border-color: lighten($color: $borderColor, $amount: 10);
   }
 }
 
@@ -52,9 +64,18 @@ $borderColor: #8a8886;
     color: $primaryColor;
   }
 
+  .button__label .icon {
+    color: #FFF;
+  }
+
   &:hover {
     background-color: darken($color: $primaryColor, $amount: 5);
     border-color: darken($color: $primaryColor, $amount: 5);
+  }
+
+  &:active {
+    background-color: darken($color: $primaryColor, $amount: 10);
+    border-color: darken($color: $primaryColor, $amount: 10);
   }
 }
 
@@ -62,9 +83,22 @@ $borderColor: #8a8886;
   background-color: transparent;
   border-color: transparent;
 
+  .button__label {
+    font-weight: normal;
+
+    .icon {
+      color: $primaryColor;
+    }
+  }
+
   &:hover {
     background-color: darken($color: #FFF, $amount: 5);
     border-color: darken($color: #FFF, $amount: 5);
+  }
+
+  &:active {
+    background-color: darken($color: #FFF, $amount: 10);
+    border-color: darken($color: #FFF, $amount: 10);
   }
 }
 

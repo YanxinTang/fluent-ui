@@ -4,19 +4,17 @@
 
 通过设置类名 `icon icon-name` 来
 
-<template>
-  <div class="icon-list">
-    <div class="icon-item">
-      <div class="icon-item__icon">
-        <i class="icon icon-BeerMug" />
-      </div>
+::: demo
+```html
+<div class="icon-list">
+  <div class="icon-item">
+    <div class="icon-item__icon">
+      <i class="icon icon-BeerMug" />
     </div>
   </div>
-</template>
-
-```html
-<i class="icon icon-BeerMug">
+</div>
 ```
+:::
 
 ## 图标展示
 
@@ -60,7 +58,7 @@
       .icon-item__icon {
         font-size: 2.5rem;
       }
-      
+
       .icon-item__name {
         font-size: 0.8rem;
         color: #323130;

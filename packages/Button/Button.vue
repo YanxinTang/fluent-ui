@@ -4,6 +4,7 @@
     class="button" 
     :class="buttonClass"
     @click="$emit('click', $event)"
+    :disabled="disabled"
   >
     <span class="button__label">
       <i :class="['icon', `icon-${icon}`]" v-if="icon"></i>
@@ -28,6 +29,10 @@ export default {
     icon: {
       type: String,
       default: '',
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
     },
     secondaryText: {
       type: String,

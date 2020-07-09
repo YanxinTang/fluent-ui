@@ -1,11 +1,154 @@
-$theme: (
-  'Darker': #004578,
-  'Dark': #005a9e,
-  'DarkAlt': #106ebe,
-  'Primary': #0078d4,
-  'Secondary': #2b88d8,
-  'Tertiary': #71afe5,
-  'Light': #c7e0f4,
-  'Lighter': #deecf9,
-  'LighterAlt': #eff6fc
-)
+$themeDrker: #004578;
+$themeDark: #005a9e;
+$themeDarkAlt: #106ebe;
+$themePrimary: #0078d4;
+$themeSecondary: #2b88d8;
+$themeTertiary: #71afe5;
+$themeLight: #c7e0f4;
+$themeLighter: #deecf9;
+$themeLighterAlt: #eff6fc;
+$black: #000000;
+$blackTranslucent40: rgba(0,0,0,.4);
+$neutralDark: #201f1e;
+$neutralPrimary: #323130;
+$neutralPrimaryAlt: #3b3a39;
+$neutralSecondary: #605e5c;
+$neutralSecondaryAlt: #8a8886;
+$neutralTertiary: #a19f9d;
+$neutralTertiaryAlt: #c8c6c4;
+$neutralQuaternary: #d2d0ce;
+$neutralQuaternaryAlt: #e1dfdd;
+$neutralLight: #edebe9;
+$neutralLighter: #f3f2f1;
+$neutralLighterAlt: #faf9f8;
+$accen: #0078d4;
+$white: #ffffff;
+$whiteTranslucent40: rgba(255,255,255,.4);
+$yelloDark: #d29200;
+$yello: #ffb900;
+$yelloLight: #fff100;
+$orang: #d83b01;
+$orangLight: #ea4300;
+$orangLighter: #ff8c00;
+$redDark: #a4262c;
+$red: #e81123;
+$magenaDark: #5c005c;
+$magena: #b4009e;
+$magenaLight: #e3008c;
+$purplDark: #32145a;
+$purpl: #5c2d91;
+$purplLight: #b4a0ff;
+$blueDark: #002050;
+$blueMd: #00188f;
+$blue: #0078d4;
+$blueLight: #00bcf2;
+$tealDark: #004b50;
+$teal: #008272;
+$tealLight: #00b294;
+$greenDark: #004b1c;
+$green: #107c10;
+$greenLight: #bad80a;
+
+$depth0: '0 0 0 0 transparent';
+$depth4: '0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108)';
+$depth8: '0 3.2px 7.2px 0 rgba(0, 0, 0, 0.132), 0 0.6px 1.8px 0 rgba(0, 0, 0, 0.108)';
+$depth16: '0 6.4px 14.4px 0 rgba(0, 0, 0, 0.132), 0 1.2px 3.6px 0 rgba(0, 0, 0, 0.108)';
+$depth64: '0 25.6px 57.6px 0 rgba(0, 0, 0, 0.22), 0 4.8px 14.4px 0 rgba(0, 0, 0, 0.18)';
+
+$size10: '10px';
+$size12: '12px';
+$size14: '14px';
+$size16: '16px';
+$size18: '18px';
+$size20: '20px';
+$size24: '24px';
+$size28: '28px';
+$size32: '32px';
+$size42: '42px';
+$size68: '68px';
+
+$font-size-mini: 10px;
+$font-size-xSmall: 10px;
+$font-size-small: 12px;
+$font-size-smallPlus: 12px;
+$font-size-medium: 14px;
+$font-size-mediumPlus: 16px;
+$font-size-icon: 16px;
+$font-size-large: 18px;
+$font-size-xLarge: 20px;
+$font-size-xLargePlus: 24px;
+$font-size-xxLarge: 28px;
+$font-size-xxLargePlus: 32px;
+$font-size-superLarge: 42px;
+$font-size-mega: 68px;
+
+$CommunicationColorsShade30: #004578;
+$CommunicationColorsShade20: #005a9e;
+$CommunicationColorsShade10: #106ebe;
+$CommunicationColorsPrimary: #0078d4;
+$CommunicationColorsTint10: #2b88d8;
+$CommunicationColorsTint20: #c7e0f4;
+$CommunicationColorsTint30: #deecf9;
+$CommunicationColorsTint40: #eff6fc;
+
+$NeutralColorsBlack: #000000;
+$NeutralColorsGray220: #11100f;
+$NeutralColorsGray210: #161514;
+$NeutralColorsGray200: #1b1a19;
+$NeutralColorsGray190: #201f1e;
+$NeutralColorsGray180: #252423;
+$NeutralColorsGray170: #292827;
+$NeutralColorsGray160: #323130;
+$NeutralColorsGray150: #3b3a39;
+$NeutralColorsGray140: #484644;
+$NeutralColorsGray130: #605e5c;
+$NeutralColorsGray120: #797775;
+$NeutralColorsGray110: #8a8886;
+$NeutralColorsGray100: #979593;
+$NeutralColorsGray90: #a19f9d;
+$NeutralColorsGray80: #b3b0ad;
+$NeutralColorsGray70: #bebbb8;
+$NeutralColorsGray60: #c8c6c4;
+$NeutralColorsGray50: #d2d0ce;
+$NeutralColorsGray40: #e1dfdd;
+$NeutralColorsGray30: #edebe9;
+$NeutralColorsGray20: #f3f2f1;
+$NeutralColorsGray10: #faf9f8;
+$NeutralColorsWhite: #ffffff;
+
+$sharedColorsPinkRed10: #750b1c;
+$sharedColorsRed20: #a4262c;
+$sharedColorsRed10: #d13438;
+$sharedColorsRedOrange20: #603d30;
+$sharedColorsRedOrange10: #da3b01;
+$sharedColorsOrange30: #8e562e;
+$sharedColorsOrange20: #ca5010;
+$sharedColorsOrange10: #ffaa44;
+$sharedColorsYellow10: #fce100;
+$sharedColorsOrangeYellow20: #986f0b;
+$sharedColorsOrangeYellow10: #c19c00;
+$sharedColorsYellowGreen10: #8cbd18;
+$sharedColorsGreen20: #0b6a0b;
+$sharedColorsGreen10: #498205;
+$sharedColorsGreenCyan10: #00ad56;
+$sharedColorsCyan40: #005e50;
+$sharedColorsCyan30: #005b70;
+$sharedColorsCyan20: #038387;
+$sharedColorsCyan10: #00b7c3;
+$sharedColorsCyanBlue20: #004e8c;
+$sharedColorsCyanBlue10: #0078d4;
+$sharedColorsBlue10: #4f6bed;
+$sharedColorsBlueMagenta40: #373277;
+$sharedColorsBlueMagenta30: #5c2e91;
+$sharedColorsBlueMagenta20: #8764b8;
+$sharedColorsBlueMagenta10: #8378de;
+$sharedColorsMagenta20: #881798;
+$sharedColorsMagenta10: #c239b3;
+$sharedColorsMagentaPink20: #9b0062;
+$sharedColorsMagentaPink10: #e3008c;
+$sharedColorsGray40: #393939;
+$sharedColorsGray30: #7a7574;
+$sharedColorsGray20: #69797e;
+$sharedColorsGray10: #a0aeb2;
+
+$roundedCorner2: 2px;

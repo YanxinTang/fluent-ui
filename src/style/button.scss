@@ -1,10 +1,7 @@
 @import './variable.scss';
 
-$primaryColor: map-get($theme, 'Primary');
-$borderColor: #8a8886;
-
 .button {
-  font-size: 14px;
+  font-size: $font-size-medium;
   font-weight: 400;
   box-sizing: border-box;
   display: inline-block;
@@ -12,14 +9,34 @@ $borderColor: #8a8886;
   cursor: pointer;
   padding: 0 16px;
   height: 32px;
-  background-color: #FFF;
-  color: #323130;
+  background-color: $white;
+  color: $neutralPrimary;
   user-select: none;
-  outline: transparent;
-  border: 1px solid $borderColor;
+  border: 1px solid $neutralSecondaryAlt;
   border-image: initial;
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: $roundedCorner2;
+
+  &:hover {
+    color: $neutralDark;
+    background-color: $neutralLighter;
+  }
+  
+  &:active {
+    color: $neutralDark;
+    background-color: $neutralLight;
+  }
+
+  &:disabled {
+    &, &:hover, &:focus {
+      background-color: $neutralLighter;
+      border-color: $neutralLighter;
+      color: $neutralQuaternary;
+      cursor: default;
+      pointer-events: none;
+      outline: 0;
+    }
+  }
 
   &.button--compound {
     padding: 16px 12px;
@@ -36,69 +53,80 @@ $borderColor: #8a8886;
 
     .icon {
       margin: 0 4px;
-      color: $primaryColor;
     }
   }
 
   .button__description {
     margin: 5px 0 0 0;
   }
-
-  &:hover {
-    background-color: darken($color: #FFF, $amount: 5);
-    border-color: lighten($color: $borderColor, $amount: 5);
-  }
-
-  &:active {
-    background-color: darken($color: #FFF, $amount: 10);
-    border-color: lighten($color: $borderColor, $amount: 10);
-  }
-}
-
-.button.button--primary {
-  color: #FFF;
-  background-color: $primaryColor;
-  border-color: $primaryColor;
-
-  &.button--plain {
-    color: $primaryColor;
-  }
-
-  .button__label .icon {
-    color: #FFF;
-  }
-
-  &:hover {
-    background-color: darken($color: $primaryColor, $amount: 5);
-    border-color: darken($color: $primaryColor, $amount: 5);
-  }
-
-  &:active {
-    background-color: darken($color: $primaryColor, $amount: 10);
-    border-color: darken($color: $primaryColor, $amount: 10);
-  }
 }
 
 .button.button--plain {
   background-color: transparent;
   border-color: transparent;
-
-  .button__label {
-    font-weight: normal;
-
-    .icon {
-      color: $primaryColor;
-    }
-  }
+  color: $neutralPrimary;
 
   &:hover {
-    background-color: darken($color: #FFF, $amount: 5);
-    border-color: darken($color: #FFF, $amount: 5);
+    @extend .button:hover;
   }
 
   &:active {
-    background-color: darken($color: #FFF, $amount: 10);
-    border-color: darken($color: #FFF, $amount: 10);
+    @extend .button:active;
+  }
+
+  &:disabled {
+    @extend .button:disabled;
+    background: $white;
   }
 }
 
+
+.button.button--primary {
+  color: $white;
+  background-color: $themePrimary;
+  border-color: transparent;
+
+  &:hover {
+    color: $white;
+    background-color: $themeDarkAlt;
+  }
+  
+  &:active {
+    color: $white;
+    background-color: $themeDark;
+  }
+
+  &:disabled {
+    &, &:hover, &:focus {
+      background-color: $themeLighter;
+      color: $themeTertiary;
+      cursor: default;
+      pointer-events: none;
+      outline: 0;
+    }
+  }
+}
+
+.button.button--primary.button--plain {
+  color: $themePrimary;
+  background-color: $white;
+
+  &:hover {
+    @extend .button:hover;
+    color: $themePrimary;
+    background-color: $neutralLighter;
+  }
+
+  &:active {
+    @extend .button:active;
+    color: $themePrimary;
+    background-color: $neutralLight;
+  }
+
+  &:disabled {
+    @extend .button:disabled;
+    color: $themeTertiary;
+    background: $white;
+    border-color: $themeLighter;
+  }
+}

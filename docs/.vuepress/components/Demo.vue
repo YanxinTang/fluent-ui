@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="toolbar">
-        <Button icon="Embed" plain @click="isShowCode = !isShowCode"></Button>
+        <Button icon="Embed" primary plain @click="isShowCode = !isShowCode"></Button>
       </div>
     </div>
     <div class="demo-body">

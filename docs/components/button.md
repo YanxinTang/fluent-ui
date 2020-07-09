@@ -13,8 +13,20 @@
 ```
 :::
 
+## 禁用状态
 
-::: demo 绑定事件
+::: demo
+```html
+<Button disabled>Button</Button>
+<Button plain disabled>Button</Button>
+<Button primary disabled>Button</Button>
+<Button primary plain disabled>Button</Button>
+```
+:::
+
+## 绑定事件
+
+::: demo 
 ```html
 <template>
   <Button @click="hello">Button</Button>
@@ -54,17 +66,21 @@
 ```html
 <div class="button-group">
   <Button icon="Mail"></Button>
-  <Button icon="Mail" primary plain></Button>
+  <Button icon="Mail" primary></Button>
   <Button icon="Mail" plain></Button>
+  <Button icon="Mail" primary plain></Button>
 </div>
 <div class="button-group">
   <Button icon="Mail">Send Email</Button>
-  <Button icon="Mail" primary plain>Send Email</Button>
+  <Button icon="Mail" primary>Send Email</Button>
   <Button icon="Mail" plain>Send Email</Button>
+  <Button icon="Mail" primary plain>Send Email</Button>
 </div>
 <div class="button-group">
   <Button secondary-text="This is the secondary text." icon="Mail">Button</Button>
   <Button primary secondary-text="This is the secondary text." icon="Mail">Button</Button>
+  <br>
+  <Button plain secondary-text="This is the secondary text." icon="Mail">Button</Button>
   <Button primary plain secondary-text="This is the secondary text." icon="Mail">Button</Button>
 </div>
 ```
@@ -77,7 +93,7 @@
 |-------|------ |------|------|------|
 | primary | 是否为主题按钮 | Boolean | -- | false |
 | plain | 是否朴素按钮 | Boolean | -- | false |
-| icon | 按钮图标 | String | -- | false |
+| icon | 按钮图标 | String | -- |  |
 | secondary-text | 次要文字 | String | -- | |
 
 

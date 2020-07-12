@@ -30,7 +30,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: '例子',
+      default: '',
     },
     description: {
       type: String,

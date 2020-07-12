@@ -1,0 +1,34 @@
+@import 'mixins/grid.scss';
+
+.col {
+  box-sizing: border-box;
+}
+
+// Default column width
+@for $i from 0 through 12 {
+  .col-#{$i} {
+    flex-basis: ($i / 12 * 100) * 1%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .col-offset-#{$i} {
+    margin-left: ($i / 12 * 100) * 1%;
+  }
+}
+
+@each $name, $width in $breakpoints {
+  @include breakpoint($name) {
+    @for $i from 0 through 12 {
+      .col-#{$name}-#{$i} {
+        flex-basis: ($i / 12 * 100) * 1%;
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+
+      .col-#{$name}-offset-#{$i} {
+        margin-left: ($i / 12 * 100) * 1%;
+      }
+    }
+  }
+}

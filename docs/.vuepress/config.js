@@ -21,6 +21,7 @@ module.exports = {
         collapsable: false,
         children: [
           '/components/icon',
+          '/components/grid',
           '/components/button'
         ]
       }

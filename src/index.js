@@ -1,7 +1,10 @@
 import Button from '@packages/Button';
+import { Row, Col } from '@packages/Grid';
 
 const components = {
-  Button: Button,
+  Button,
+  Row,
+  Col,
 }
 
 const install = function (Vue, options = {}) {

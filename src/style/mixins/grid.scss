@@ -1,0 +1,11 @@
+@import '../variable.scss';
+
+@mixin breakpoint($name, $breakpoints: $breakpoints) {
+  @if map-has-key($breakpoints, $name) {
+    @media only screen and (min-width: map-get($breakpoints, $name)) {
+      @content;
+    }
+  } @else {
+    @warn "Undefeined points: `#{$map}`";
+  }
+}

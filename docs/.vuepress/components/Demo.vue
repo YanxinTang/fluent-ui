@@ -51,6 +51,7 @@ export default {
   flex-flow: column nowrap;
   justify-content: flex-start;
   border: 1px solid #eee;
+  margin: 12px 0;
 
   .demo-head, .demo-body {
     padding: 10px 16px;

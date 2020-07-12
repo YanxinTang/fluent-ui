@@ -99,8 +99,6 @@
 
 <style lang="scss">
 .demo {
-  margin: 1rem 0;
-
   .button-group {
     margin: 0.5rem 0;
   }

@@ -106,36 +106,3 @@
   }
 }
 </style>
-<!-- 
-<script>
-export default {
-  name: 'page',
-  components: {
-    'demo-block-1':(function() {
-
-      var render = function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [_vm._v("\n  2222\n")])
-  }
-  var staticRenderFns = []
-  render._withStripped = true
-
-
-      const democomponentExport = {
-      methods: {
-        hello() {
-          alert('Hello World!');
-        }
-      }
-    }
-      return {
-        render,
-        staticRenderFns,
-        ...democomponentExport
-      }
-    })()
-  }
-}
-</script> -->

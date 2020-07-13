@@ -178,6 +178,83 @@ Fluent-UI 的栅格布局是借助 `flex` 来完成的。主要有两个组件�
 ```
 :::
 
+## 辅助类
+
+辅助类可以帮助你快速地在不同尺寸的屏幕上隐藏一些内容。你可以缩放屏幕来观察下面示例的效果。
+
+:::demo 
+```html
+<template>
+  <Row>
+    <Col :span="2" class="hidden-sm">
+      <div class="demo-placeholder">hidden-sm</div>
+    </Col>
+    <Col :span="2" class="hidden-md">
+      <div class="demo-placeholder">hidden-md</div>
+    </Col>
+    <Col :span="2" class="hidden-lg">
+      <div class="demo-placeholder">hidden-lg</div>
+    </Col>
+    <Col :span="2" class="hidden-xl">
+      <div class="demo-placeholder">hidden-xl</div>
+    </Col>
+    <Col :span="2" class="hidden-xxl">
+      <div class="demo-placeholder">hidden-xxl</div>
+    </Col>
+    <Col :span="2" class="hidden-xxxl">
+      <div class="demo-placeholder">hidden-xxxl</div>
+    </Col>
+  </Row>
+  <Row>
+    <Col :span="3" class="hidden-md-up">
+      <div class="demo-placeholder">hidden-md-up</div>
+    </Col>
+    <Col :span="3" class="hidden-lg-up">
+      <div class="demo-placeholder">hidden-lg-up</div>
+    </Col>
+    <Col :span="3" class="hidden-xl-up">
+      <div class="demo-placeholder">hidden-xl-up</div>
+    </Col>
+    <Col :span="3" class="hidden-xxl-up">
+      <div class="demo-placeholder">hidden-xxl-up</div>
+    </Col>
+  </Row>
+  <Row>
+    <Col :span="3" class="hidden-md-down">
+      <div class="demo-placeholder">hidden-md-down</div>
+    </Col>
+    <Col :span="3" class="hidden-lg-down">
+      <div class="demo-placeholder">hidden-lg-down</div>
+    </Col>
+    <Col :span="3" class="hidden-xl-down">
+      <div class="demo-placeholder">hidden-xl-down</div>
+    </Col>
+    <Col :span="3" class="hidden-xxl-down">
+      <div class="demo-placeholder">hidden-xxl-down</div>
+    </Col>
+  </Row>
+</template>
+```
+:::
+
+| Class | SM | MD | LG | XL | XXL | XXXL |
+|-------| -- | -- | -- | -- | --- | ---- |
+| hidden-sm |  | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> |
+| hidden-md | <i class="icon icon-Accept" /> |  | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> |
+| hidden-lg | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> |  | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> |
+| hidden-xl | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> |  | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> |
+| hidden-xxl | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> |  | <i class="icon icon-Accept" /> |
+| hidden-xxxl | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> |  |
+| hidden-md-down |   |  | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> |
+| hidden-md-up | <i class="icon icon-Accept" /> |  |  |  |  |  |
+| hidden-lg-down |   |  |  | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> |
+| hidden-lg-up | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> |  |  |  |  |
+| hidden-xl-down |   |  |  |  | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> |
+| hidden-xl-up | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> |  |  |  |
+| hidden-xxl-down |   |  |  |  |  | <i class="icon icon-Accept" /> |
+| hidden-xxl-up | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> | <i class="icon icon-Accept" /> |  |  |
+
+
 ## 属性
 
 ### `Row`

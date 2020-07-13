@@ -1,0 +1,39 @@
+@import "mixins/grid.scss";
+
+// display utils
+@each $name, $size in $breakpoints {
+  $prev: breakpoint-prev($name, $breakpoints);
+  $next: breakpoint-next($name, $breakpoints);
+
+  @if not $prev {
+    @media screen and (max-width: map-get($breakpoints, $next)) {
+      .hidden-#{$name} {
+        display: none;
+      }
+    }
+  } @else if not $next {
+    @media screen and (min-width: map-get($breakpoints, $name)) {
+      .hidden-#{$name} {
+        display: none;
+      }
+    }
+  } @else {
+    @media screen and (min-width: map-get($breakpoints, $name)) and (max-width: map-get($breakpoints, $next)) {
+      .hidden-#{$name} {
+        display: none;
+      }
+    }
+    
+    @media screen and (min-width: map-get($breakpoints, $name)) {
+      .hidden-#{$name}-up {
+        display: none;
+      }
+    }
+    
+    @media screen and (max-width: map-get($breakpoints, $name)) {
+      .hidden-#{$name}-down {
+        display: none;
+      }
+    }
+  }
+}

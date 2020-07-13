@@ -1,5 +1,27 @@
 @import '../variable.scss';
 
+@function breakpoint-prev($name, $breakpoints: $breakpoints) {
+  $breakpoint-names: map-keys($breakpoints);
+  $n: index($breakpoint-names, $name);
+
+  @if not $n {
+    @error "breakpoint `#{$name}` not found in `#{$breakpoint-names}`";
+  }
+
+  @return if($n == 1, null, nth($breakpoint-names, $n - 1));
+}
+
+@function breakpoint-next($name, $breakpoints: $breakpoints) {
+  $breakpoint-names: map-keys($breakpoints);
+  $n: index($breakpoint-names, $name);
+
+  @if not $n {
+    @error "breakpoint `#{$name}` not found in `#{$breakpoint-names}`";
+  }
+  @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+
 @mixin breakpoint($name, $breakpoints: $breakpoints) {
   @if map-has-key($breakpoints, $name) {
     @media only screen and (min-width: map-get($breakpoints, $name)) {

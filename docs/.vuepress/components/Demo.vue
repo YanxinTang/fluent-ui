@@ -1,7 +1,7 @@
 <template>
   <div class="demo">
     <div class="demo-head">
-      <div >
+      <div>
         <div class="title">
           {{ title }}
         </div>
@@ -34,15 +34,15 @@ export default {
     },
     description: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
   data() {
     return {
       isShowCode: false,
-    }
-  }
-}
+    };
+  },
+};
 </script>
 
 <style lang="scss">
@@ -53,7 +53,8 @@ export default {
   border: 1px solid #eee;
   margin: 12px 0;
 
-  .demo-head, .demo-body {
+  .demo-head,
+  .demo-body {
     padding: 10px 16px;
   }
 

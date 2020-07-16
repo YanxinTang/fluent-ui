@@ -1,7 +1,4 @@
 import Row from './Row.vue';
 import Col from './Col.vue';
 
-export {
-  Row,
-  Col
-}
+export { Row, Col };

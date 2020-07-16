@@ -11,7 +11,7 @@ export default {
     gutter: {
       type: String,
       default: '',
-    }
-  }
-}
+    },
+  },
+};
 </script>

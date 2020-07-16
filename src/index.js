@@ -5,13 +5,12 @@ const components = {
   Button,
   Row,
   Col,
-}
+};
 
-const install = function (Vue, options = {}) {
-
-  Object.keys(components).forEach(key => {
+const install = function (Vue) {
+  Object.keys(components).forEach((key) => {
     Vue.component(key, components[key]);
   });
-}
+};
 
 export default install;

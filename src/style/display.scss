@@ -1,4 +1,4 @@
-@import "mixins/grid.scss";
+@import 'mixins/grid.scss';
 
 // display utils
 @each $name, $size in $breakpoints {
@@ -23,13 +23,13 @@
         display: none;
       }
     }
-    
+
     @media screen and (min-width: map-get($breakpoints, $name)) {
       .hidden-#{$name}-up {
         display: none;
       }
     }
-    
+
     @media screen and (max-width: map-get($breakpoints, $name)) {
       .hidden-#{$name}-down {
         display: none;

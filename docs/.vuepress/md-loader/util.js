@@ -6,12 +6,12 @@ function genInlineComponentText(template, script) {
   const finalOptions = {
     source: `<div>${template}</div>`,
     filename: 'inline-component', // TODO：这里有待调整
-    compiler
+    compiler,
   };
   const compiled = compileTemplate(finalOptions);
   // tips
   if (compiled.tips && compiled.tips.length) {
-    compiled.tips.forEach(tip => {
+    compiled.tips.forEach((tip) => {
       console.warn(tip);
     });
   }
@@ -19,7 +19,7 @@ function genInlineComponentText(template, script) {
   if (compiled.errors && compiled.errors.length) {
     console.error(
       `\n  Error compiling template:\n${pad(compiled.source)}\n` +
-        compiled.errors.map(e => `  - ${e}`).join('\n') +
+        compiled.errors.map((e) => `  - ${e}`).join('\n') +
         '\n'
     );
   }
@@ -46,5 +46,5 @@ function genInlineComponentText(template, script) {
 }
 
 module.exports = {
-  genInlineComponentText
+  genInlineComponentText,
 };

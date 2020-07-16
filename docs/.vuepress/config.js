@@ -4,28 +4,20 @@ module.exports = {
   title: 'Fluent UI',
   description: 'Fluent UI implements by Vue 2',
   themeConfig: {
-    nav: [
-      { text: 'Github', link: 'https://github.com/YanxinTang/fluent-ui', target:'_blank' }
-    ],
+    nav: [{ text: 'Github', link: 'https://github.com/YanxinTang/fluent-ui', target: '_blank' }],
     sidebarDepth: 0,
     sidebar: [
       {
         title: '开发指南',
         collapsable: false,
-        children: [
-          '/install'
-        ]
+        children: ['/install'],
       },
       {
         title: '组件',
         collapsable: false,
-        children: [
-          '/components/icon',
-          '/components/grid',
-          '/components/button'
-        ]
-      }
-    ]
+        children: ['/components/icon', '/components/grid', '/components/button'],
+      },
+    ],
   },
   chainWebpack: (config) => {
     const packagesPath = path.resolve(process.cwd(), 'packages');
@@ -33,13 +25,9 @@ module.exports = {
     config.resolve.alias.set('@packages', packagesPath);
     config.resolve.alias.set('@', sourcePath);
 
-    config.module
-    .rule('markdown-demo')
-      .test(/\.md$/)
-      .use('demo-loader')
-      .loader(require.resolve('./md-loader'));
+    config.module.rule('markdown-demo').test(/\.md$/).use('demo-loader').loader(require.resolve('./md-loader'));
   },
-  extendMarkdown: md => {
+  extendMarkdown: (md) => {
     const defaultRender = md.renderer.rules.fence;
     md.renderer.rules.fence = (tokens, idx, options, env, self) => {
       const token = tokens[idx];
@@ -50,7 +38,7 @@ module.exports = {
         return token.content;
       } else if (token.info === 'code') {
         tokens[idx].info = 'html';
-        return `<template #code>${defaultRender(tokens, idx, options, env, self)}</template>`
+        return `<template #code>${defaultRender(tokens, idx, options, env, self)}</template>`;
       }
       return defaultRender(tokens, idx, options, env, self);
     };
@@ -59,14 +47,14 @@ module.exports = {
       validate(params) {
         return params.trim().match(/^demo\s*(.*)$/);
       },
-      render (tokens, idx) {
+      render(tokens, idx) {
         var m = tokens[idx].info.trim().match(/^demo\s*(.*)$/);
         if (tokens[idx].nesting === 1) {
           const title = m && m.length > 1 ? m[1] : '';
           return title ? `<Demo title="${md.utils.escapeHtml(title)}">` : '<Demo>';
         }
         return '</Demo>';
-      }
+      },
     });
-  }
-}
+  },
+};

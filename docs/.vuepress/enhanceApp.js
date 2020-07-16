@@ -6,4 +6,4 @@ import '@/style/index.scss';
 export default ({ Vue }) => {
   Vue.prototype.$icons = icons;
   Vue.use(FluentUI);
-}
+};

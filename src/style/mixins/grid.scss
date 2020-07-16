@@ -21,7 +21,6 @@
   @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
 }
 
-
 @mixin breakpoint($name, $breakpoints: $breakpoints) {
   @if map-has-key($breakpoints, $name) {
     @media only screen and (min-width: map-get($breakpoints, $name)) {

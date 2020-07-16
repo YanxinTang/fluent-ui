@@ -21,14 +21,16 @@
     color: $neutralDark;
     background-color: $neutralLighter;
   }
-  
+
   &:active {
     color: $neutralDark;
     background-color: $neutralLight;
   }
 
   &:disabled {
-    &, &:hover, &:focus {
+    &,
+    &:hover,
+    &:focus {
       background-color: $neutralLighter;
       border-color: $neutralLighter;
       color: $neutralQuaternary;
@@ -42,7 +44,7 @@
     padding: 16px 12px;
     height: auto;
   }
-  
+
   .button__label {
     display: flex;
     flex-flow: row nowrap;
@@ -80,7 +82,6 @@
   }
 }
 
-
 .button.button--primary {
   color: $white;
   background-color: $themePrimary;
@@ -90,14 +91,16 @@
     color: $white;
     background-color: $themeDarkAlt;
   }
-  
+
   &:active {
     color: $white;
     background-color: $themeDark;
   }
 
   &:disabled {
-    &, &:hover, &:focus {
+    &,
+    &:hover,
+    &:focus {
       background-color: $themeLighter;
       color: $themeTertiary;
       cursor: default;

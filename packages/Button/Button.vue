@@ -1,11 +1,5 @@
 <template>
-  <button
-    type="button"
-    class="button" 
-    :class="buttonClass"
-    @click="$emit('click', $event)"
-    :disabled="disabled"
-  >
+  <button type="button" class="button" :class="buttonClass" @click="$emit('click', $event)" :disabled="disabled">
     <span class="button__label">
       <i :class="['icon', `icon-${icon}`]" v-if="icon"></i>
       <slot></slot>
@@ -36,20 +30,20 @@ export default {
     },
     secondaryText: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
   computed: {
     hasSecondaryText() {
       return this.secondaryText !== '';
     },
     buttonClass() {
-      return { 
+      return {
         'button--primary': this.primary,
         'button--plain': this.plain,
         'button--compound': this.hasSecondaryText,
       };
-    }
-  }
-}
+    },
+  },
+};
 </script>

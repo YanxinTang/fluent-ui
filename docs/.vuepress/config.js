@@ -15,7 +15,7 @@ module.exports = {
       {
         title: '组件',
         collapsable: false,
-        children: ['/components/icon', '/components/grid', '/components/button'],
+        children: ['/components/icon', '/components/grid', '/components/button', '/components/checkbox'],
       },
     ],
   },

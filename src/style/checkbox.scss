@@ -1,0 +1,106 @@
+@import '../style/variable.scss';
+
+$checkboxSize: 20px;
+$checkboxTransitionDuration: 200ms;
+$checkboxTransitionTiming: cubic-bezier(0.4, 0, 0.23, 1);
+
+.checkbox {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+
+  .checkbox__control {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    outline: none;
+    width: 0;
+    height: 0;
+  }
+
+  .checkbox__input,
+  .checkbox__text {
+    font-size: $font-size-medium;
+    user-select: none;
+    vertical-align: middle;
+  }
+
+  .checkbox__input {
+    display: inline-flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: $checkboxSize;
+    height: $checkboxSize;
+    line-height: $checkboxSize;
+    vertical-align: middle;
+    background-color: $white;
+    border: 1px solid $neutralPrimary;
+    border-radius: $roundedCorner2;
+    color: $white;
+    transition-property: background, border, border-color;
+    transition-duration: $checkboxTransitionDuration;
+    transition-timing-function: $checkboxTransitionTiming;
+  }
+
+  .checkbox__inner {
+    color: $neutralSecondary;
+    visibility: hidden;
+  }
+
+  &:hover {
+    .checkbox__inner {
+      visibility: visible;
+    }
+  }
+
+  .checkbox__text {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+.checkbox.checkbox--checked {
+  .checkbox__input {
+    background-color: $themePrimary;
+    border-color: $themePrimary;
+  }
+
+  .checkbox__inner {
+    visibility: visible;
+    color: $white;
+  }
+
+  &:hover {
+    .checkbox__input {
+      background-color: $themeDark;
+      border-color: $themeDark;
+    }
+  }
+}
+
+.checkbox.checkbox--disabled {
+  cursor: default;
+  .checkbox__input {
+    border-color: $neutralTertiary;
+  }
+
+  .checkbox__inner {
+    visibility: hidden;
+  }
+
+  .checkbox__text {
+    color: $neutralTertiary;
+  }
+}
+
+.checkbox.checkbox--checked.checkbox--disabled {
+  .checkbox__input {
+    border-color: $neutralTertiary;
+    background-color: $neutralTertiary;
+  }
+
+  .checkbox__inner {
+    visibility: visible;
+  }
+}

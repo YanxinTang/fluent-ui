@@ -7,6 +7,7 @@ module.exports = {
     "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
   },
   "moduleNameMapper": {
-    "^@packages/(.*)$": "<rootDir>/packages/$1"
+    "^@/(.*)$": "<rootDir>/src/$1",
+    "^@packages/(.*)$": "<rootDir>/packages/$1",
   }
 };

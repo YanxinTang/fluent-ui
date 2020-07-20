@@ -1,12 +1,14 @@
 import Button from '@packages/Button';
 import { Row, Col } from '@packages/Grid';
 import Checkbox from '@packages/Checkbox';
+import Radio from '@packages/Radio';
 
 const components = {
   Button,
   Row,
   Col,
   Checkbox,
+  Radio,
 };
 
 const install = function (Vue) {

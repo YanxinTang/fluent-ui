@@ -1,0 +1,139 @@
+@import '../style/variable.scss';
+
+$radioSize: 20px;
+$radioInnerSize: 10px;
+$radioTransitionDuration: 200ms;
+$radioTransitionTiming: cubic-bezier(0.4, 0, 0.23, 1);
+
+.radio {
+  position: relative;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+
+  .radio__control {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    outline: none;
+    width: 0;
+    height: 0;
+  }
+
+  .radio__text {
+    font-size: $font-size-medium;
+    user-select: none;
+    vertical-align: middle;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .radio__input {
+    position: relative;
+    width: $radioSize;
+    height: $radioSize;
+    display: inline-block;
+
+    &::before, &::after {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      width: $radioSize;
+      height: $radioSize;
+      border: 1px solid $neutralPrimary;
+    }
+
+    &::after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: $radioInnerSize;
+      height: $radioInnerSize;
+      transition-duration: $radioTransitionDuration;
+      transition-timing-function: $radioTransitionTiming;
+      visibility: hidden;
+    }
+  }
+
+  .radio__inner {
+    color: $neutralSecondary;
+    visibility: hidden;
+  }
+
+  &:hover {
+    .radio__input::after {
+      visibility: visible;
+      background-color: $neutralPrimary;
+      transition-property: background-color;
+    }
+  }
+}
+
+.radio.radio--checked {
+  .radio__input {
+    &::before {
+      border-color: $themePrimary;
+    }
+
+    &::after {
+      visibility: visible;
+      background-color: $themePrimary;
+    }
+  }
+
+  &:hover {
+    .radio__input {
+      &::before {
+        border-color: $themeDark;
+      }
+      &::after {
+        background-color: $themeDark;
+      }
+    }
+  }
+}
+
+.radio.radio--disabled {
+  cursor: default;
+  .radio__input {
+    &::before {
+      border-color: $neutralTertiary;
+    }
+  }
+
+  .radio__text {
+    color: $neutralTertiary;
+  }
+
+  &:hover {
+    .radio__input {
+      &::after {
+        visibility: hidden;
+        background-color: $themeDark;
+      }
+    }
+  }
+}
+
+.radio.radio--checked.radio--disabled {
+  &::before {
+    border-color: $neutralTertiary;
+  }
+  &::after {
+    visibility: visible;
+    background-color: $neutralTertiary;
+  }
+
+  .radio__text {
+    color: $neutralTertiary;
+  }
+}

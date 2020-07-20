@@ -117,5 +117,5 @@
 ## 单组件导入
 
 ```js
-import { Checkbox } from 'fluent-ui/grid';
+import { Checkbox } from 'fluent-ui/Checkbox';
 ```

@@ -280,7 +280,7 @@ Fluent-UI 的栅格布局是借助 `flex` 来完成的。主要有两个组件�
 ## 单组件导入
 
 ```js
-import { Row, Col } from 'fluent-ui/grid';
+import { Row, Col } from 'fluent-ui/Grid';
 ```
 
 <style lang="scss">

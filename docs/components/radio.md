@@ -55,5 +55,5 @@
 ## 单组件导入
 
 ```js
-import { Radio } from 'fluent-ui/Radio';
+import { Radio } from '@tyx1703/fluent-ui/Radio';
 ```

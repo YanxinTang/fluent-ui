@@ -1,5 +1,5 @@
 const path = require('path');
-const merge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 
 const cwd = process.cwd();
@@ -9,7 +9,7 @@ module.exports = merge(common, {
   entry: path.resolve(cwd, 'src/index.js'),
   output: {
     publicPath: 'dist',
-    filename: 'fluent-ui.min.js',  // 改成自己的类库名
+    filename: 'fluent-ui.min.js', // 改成自己的类库名
     library: 'fluent-ui', // 类库导出
     libraryTarget: 'umd',
     umdNamedDefine: true,
@@ -19,7 +19,7 @@ module.exports = merge(common, {
       root: 'Vue',
       commonjs: 'vue',
       commonjs2: 'vue',
-      amd: 'vue'
-    }
-  }
-})
+      amd: 'vue',
+    },
+  },
+});

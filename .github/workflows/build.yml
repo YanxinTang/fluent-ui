@@ -10,13 +10,13 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 12
-    - name: install
+    - name: Install Dependencies
       run: yarn install
     
-    - name: test
+    - name: Test Code
       run: yarn test
     
-    - name: build
+    - name: Bulid Lib & Build Docs
       run: |
         yarn lib:build
         yarn docs:build

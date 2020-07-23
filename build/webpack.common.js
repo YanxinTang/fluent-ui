@@ -1,6 +1,5 @@
 const path = require('path');
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
-
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 const cwd = process.cwd();
 
@@ -9,16 +8,15 @@ module.exports = {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
-      }
-    ]
+        loader: 'vue-loader',
+      },
+    ],
   },
-  plugins: [
-    new VueLoaderPlugin()
-  ],
+  plugins: [new VueLoaderPlugin()],
   resolve: {
     alias: {
-      '@packages': path.resolve(cwd, 'packages')
-    }
-  }
-}
+      '@': path.resolve(cwd, 'src'),
+      '@packages': path.resolve(cwd, 'packages'),
+    },
+  },
+};

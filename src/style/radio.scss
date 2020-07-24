@@ -36,9 +36,10 @@ $radioTransitionTiming: cubic-bezier(0.4, 0, 0.23, 1);
     height: $radioSize;
     display: inline-block;
 
-    &::before, &::after {
+    &::before,
+    &::after {
       position: absolute;
-      content: "";
+      content: '';
       display: inline-block;
       border-radius: 50%;
       box-sizing: border-box;

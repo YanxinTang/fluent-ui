@@ -13,7 +13,8 @@
     "docs:build": "vuepress build docs",
     "test": "jest",
     "lint": "eslint --ext .js,.vue src test packages",
-    "format": "prettier --write src/**/* test/**/* packages/**/* docs/**/*"
+    "format": "prettier --write src/**/* test/**/* packages/**/* docs/**/*",
+    "release": "standard-version"
   },
   "husky": {
     "hooks": {
@@ -47,6 +48,7 @@
     "node-sass": "^4.14.1",
     "prettier": "2.0.5",
     "sass-loader": "^9.0.2",
+    "standard-version": "^8.0.2",
     "vue-jest": "https://github.com/YanxinTang/vue-jest.git#master",
     "vue-loader": "^15.9.3",
     "vue-template-compiler": "^2.6.11",

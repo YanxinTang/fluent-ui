@@ -56,7 +56,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          body: Release ${{ github.ref }}
+          body: Please refer to [CHANGELOG.md](https://github.com/YanxinTang/fluent-ui/blob/master/CHANGELOG.md) for details.
           draft: false
           prerelease: false
 

@@ -2,33 +2,34 @@ name: Release Package
 
 on:
   push:
-    ranches:
+    branches:
       - master
     # Sequence of patterns matched against refs/tags
     tags:
       - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
 
 jobs:
-  codecov:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
-        node-version: '12.x'
-    - name: Generate coverage report
+        node-version: 12
+    - name: Install Dependencies
+      run: yarn install
+    
+    - name: Test Code
+      run: yarn test
+    
+    - name: Bulid Lib & Build Docs
       run: |
-        yarn install
-        yarn test --coverage
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        file: ./coverage/clover.xml
+        yarn lib:build
+        yarn docs:build
 
   publish-npm:
-    needs: codecov
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -41,7 +42,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
   
   create-release:
-    needs: codecov
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

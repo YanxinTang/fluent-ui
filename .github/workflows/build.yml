@@ -12,11 +12,26 @@ jobs:
         node-version: 12
     - name: Install Dependencies
       run: yarn install
-    
-    - name: Test Code
-      run: yarn test
-    
+
     - name: Bulid Lib & Build Docs
       run: |
         yarn lib:build
         yarn docs:build
+
+  codecov:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: Generate coverage report
+      run: |
+        yarn install
+        yarn test --coverage
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        file: ./coverage/clover.xml

@@ -1,0 +1,5 @@
+{
+  "Button": "./packages/Button",
+  "Checkbox": "./packages/Checkbox",
+  "Radio": "./packages/Radio"
+}

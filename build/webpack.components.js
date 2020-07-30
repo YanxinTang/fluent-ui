@@ -1,18 +1,22 @@
-const path = require('path');
+// const path = require('path');
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
+const components = require('../components.json');
 
-const cwd = process.cwd();
+// const cwd = process.cwd();
 
 module.exports = merge(common, {
   mode: 'production',
-  entry: path.resolve(cwd, 'src/index.js'),
+  entry: components,
   output: {
     publicPath: 'dist',
-    filename: 'fluent-ui.min.js', // 改成自己的类库名
-    library: 'fluent-ui', // 类库导出
+    filename: '[name].js',
+    library: '[name]',
     libraryTarget: 'umd',
     umdNamedDefine: true,
+  },
+  optimization: {
+    minimize: false,
   },
   externals: {
     vue: {

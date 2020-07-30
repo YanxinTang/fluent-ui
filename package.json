@@ -5,12 +5,16 @@
   "main": "src/index.js",
   "repository": "https://github.com/YanxinTang/fluent-ui",
   "homepage": "https://github.com/YanxinTang/fluent-ui#readme",
-  "keywords": ["Fluent UI", "Vue"],
+  "keywords": [
+    "Fluent UI",
+    "Vue"
+  ],
   "author": "tyx1703",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "lib:build": "webpack --config build/webpack.prod.js",
+    "lib:build": "webpack --config build/webpack.lib.js",
+    "components:build": "webpack --config build/webpack.components.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "test": "jest",

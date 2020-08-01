@@ -23,8 +23,7 @@ jobs:
     
     - name: Bulid Lib & Build Docs
       run: |
-        yarn lib:build
-        yarn docs:build
+        yarn build
 
   publish-npm:
     needs: build
@@ -70,7 +69,7 @@ jobs:
           node-version: '12.x'
 
       - run: yarn install
-      - run: yarn docs:build
+      - run: yarn build:docs
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

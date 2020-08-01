@@ -15,8 +15,7 @@ jobs:
 
     - name: Bulid Lib & Build Docs
       run: |
-        yarn lib:build
-        yarn docs:build
+        yarn build
 
   codecov:
     runs-on: ubuntu-latest

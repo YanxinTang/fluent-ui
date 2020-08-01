@@ -4,15 +4,18 @@
     :class="{
       'radio--disabled': isDisabled,
       'radio--checked': isChecked,
+      'radio--focus': focus,
     }"
   >
     <input
       type="radio"
       class="radio__control"
       :value="label"
-      @change="changeHandler"
       :disabled="isDisabled"
       :checked="isChecked"
+      @change="changeHandler"
+      @focus="focus = true"
+      @blur="focus = false"
     />
     <span class="radio__input"></span>
     <span class="radio__text" v-if="$slots.default">
@@ -40,6 +43,11 @@ export default {
       type: [String, Number],
       default: '',
     },
+  },
+  data() {
+    return {
+      focus: false,
+    };
   },
   computed: {
     isChecked() {

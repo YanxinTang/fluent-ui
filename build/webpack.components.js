@@ -3,8 +3,6 @@ const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 const components = require('../components.json');
 
-// const cwd = process.cwd();
-
 module.exports = merge(common, {
   mode: 'production',
   entry: components,
@@ -14,9 +12,6 @@ module.exports = merge(common, {
     library: '[name]',
     libraryTarget: 'umd',
     umdNamedDefine: true,
-  },
-  optimization: {
-    minimize: false,
   },
   externals: {
     vue: {

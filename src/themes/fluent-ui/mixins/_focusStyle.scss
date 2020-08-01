@@ -1,0 +1,65 @@
+@import '../variable';
+
+@mixin focus-clear() {
+  &::-moz-focus-inner {
+    // Clear the focus border in Firefox. Reference: http://stackoverflow.com/a/199319/1436671
+    border: 0;
+  }
+
+  & {
+    // Clear browser specific focus styles and use transparent as placeholder for focus style
+    outline: transparent;
+  }
+}
+
+@mixin focus($onFocus: True) {
+  @if ($onFocus) {
+    .focus--visible &:focus {
+      @content;
+    }
+  } @else {
+    .focus--visible & {
+      @content;
+    }
+  }
+}
+
+@mixin focus-after($onFocus: True) {
+  @include focus($onFocus) {
+    &:after {
+      @content;
+    }
+  }
+}
+
+/* @mixin focus-before($onFocus: True) {
+  @include focus($onFocus) {
+    &:before {
+      @content;
+    }
+  }
+} */
+
+@mixin focus-after-outline($padding: 0, $color: $neutralSecondary, $thickness: 1px, $onFocus: true, $position: relative) {
+  & {
+    @include focus-clear();
+    position: $position;
+  }
+
+  @include focus-after($onFocus) {
+    @include after-outline($padding, $color, $thickness);
+  }
+}
+
+// When focus is set using the keyboard, apply an outline.
+@mixin after-outline ($padding: 0, $color: $neutralSecondary, $thickness: 1px) {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    top: $padding;
+    right: $padding;
+    bottom: $padding;
+    left: $padding;
+    pointer-events: none;
+    outline: $thickness solid $color;
+}

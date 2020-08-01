@@ -1,10 +1,13 @@
 import { mount } from '@vue/test-utils';
-import Checkbox from '@packages/Checkbox';
+import Checkbox from '@components/Checkbox';
 
 describe('Checkbox', () => {
   test('create', () => {
     const wrapper = mount(Checkbox);
     expect(wrapper.classes()).toContain('checkbox');
+    ['checkbox--checked', 'checkbox--disabled', 'checkbox--focus'].forEach((className) => {
+      expect(wrapper.classes()).not.toContain(className);
+    });
   });
 
   test('disabled', () => {
@@ -35,6 +38,20 @@ describe('Checkbox', () => {
     });
     expect(wrapper.find('.checkbox__text').exists()).toBe(true);
     expect(wrapper.find('.checkbox__text').text()).toBe(labelText);
+  });
+
+  test('focus and blur event', async () => {
+    const wrapper = mount(Checkbox);
+    const input = wrapper.find('input[type="checkbox"]');
+    expect(wrapper.vm.focus).toBe(false);
+
+    await input.trigger('focus');
+    expect(wrapper.vm.focus).toBe(true);
+    expect(wrapper.classes()).toContain('checkbox--focus');
+
+    await input.trigger('blur');
+    expect(wrapper.vm.focus).toBe(false);
+    expect(wrapper.classes()).not.toContain('checkbox--focus');
   });
 
   test('change event', async () => {

@@ -1,4 +1,5 @@
-@import '../style/variable.scss';
+@import 'variable.scss';
+@import 'mixins/focusStyle';
 
 $radioSize: 20px;
 $radioInnerSize: 10px;
@@ -11,6 +12,8 @@ $radioTransitionTiming: cubic-bezier(0.4, 0, 0.23, 1);
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
+  margin-left: 2px;
+  margin-right: 2px;
   cursor: pointer;
 
   .radio__control {
@@ -77,6 +80,10 @@ $radioTransitionTiming: cubic-bezier(0.4, 0, 0.23, 1);
       transition-property: background-color;
     }
   }
+}
+
+.radio.radio--focus {
+  @include focus-after-outline($padding: -2px, $onFocus: false);
 }
 
 .radio.radio--checked {

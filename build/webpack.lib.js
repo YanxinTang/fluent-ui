@@ -9,13 +9,10 @@ module.exports = merge(common, {
   entry: path.resolve(cwd, 'src/index.js'),
   output: {
     publicPath: 'dist',
-    filename: 'fluent-ui.min.js',
+    filename: 'fluent-ui.js',
     library: 'fluent-ui',
     libraryTarget: 'umd',
     umdNamedDefine: true,
-  },
-  optimization: {
-    minimize: false,
   },
   externals: {
     vue: {

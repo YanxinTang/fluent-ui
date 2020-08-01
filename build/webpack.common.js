@@ -12,11 +12,15 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    minimize: false,
+  },
   plugins: [new VueLoaderPlugin()],
   resolve: {
     alias: {
       '@': path.resolve(cwd, 'src'),
-      '@packages': path.resolve(cwd, 'packages'),
+      '@components': path.resolve(cwd, 'src/components'),
+      '@themes': path.resolve(cwd, 'src/themes'),
     },
   },
 };

@@ -1,4 +1,5 @@
-@import './variable.scss';
+@import 'variable.scss';
+@import 'mixins/focusStyle';
 
 .button {
   font-size: $font-size-medium;
@@ -26,6 +27,8 @@
     color: $neutralDark;
     background-color: $neutralLight;
   }
+  
+  @include focus-after-outline(2px);
 
   &:disabled {
     &,
@@ -108,6 +111,8 @@
       outline: 0;
     }
   }
+
+  @include focus-after-outline(2px, $white);
 }
 
 .button.button--primary.button--plain {
@@ -132,4 +137,5 @@
     background: $white;
     border-color: $themeLighter;
   }
+  @include focus-after-outline(2px);
 }

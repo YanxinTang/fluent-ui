@@ -8,7 +8,7 @@ module.exports = {
   },
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
-    '^@packages/(.*)$': '<rootDir>/packages/$1',
+    '^@components/(.*)$': '<rootDir>/src/components/$1',
   },
   collectCoverageFrom: ['src/**/*.{js}', 'packages/**/*.{js,vue}'],
 };

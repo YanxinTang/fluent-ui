@@ -1,7 +1,8 @@
-import Button from '@packages/Button';
-import { Row, Col } from '@packages/Grid';
-import Checkbox from '@packages/Checkbox';
-import Radio from '@packages/Radio';
+import Button from '@components/Button';
+import Row from '@components/Row';
+import Col from '@components/Col';
+import Checkbox from '@components/Checkbox';
+import Radio from '@components/Radio';
 
 const components = {
   Button,
@@ -18,3 +19,4 @@ const install = function (Vue) {
 };
 
 export default install;
+export { bindFocusEvents } from './focusEvents';

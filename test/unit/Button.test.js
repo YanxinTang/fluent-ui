@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import Button from '@packages/Button';
+import Button from '@components/Button';
 
 describe('Button', () => {
   test('create', () => {

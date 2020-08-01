@@ -25,10 +25,11 @@ module.exports = {
       },
     ],
   },
+  clientRootMixin: path.resolve(__dirname, 'mixin.js'),
   chainWebpack: (config) => {
-    const packagesPath = path.resolve(process.cwd(), 'packages');
     const sourcePath = path.resolve(process.cwd(), 'src');
-    config.resolve.alias.set('@packages', packagesPath);
+    const componentsPath = path.resolve(sourcePath, 'components');
+    config.resolve.alias.set('@components', componentsPath);
     config.resolve.alias.set('@', sourcePath);
 
     config.module.rule('markdown-demo').test(/\.md$/).use('demo-loader').loader(require.resolve('./md-loader'));

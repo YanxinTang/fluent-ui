@@ -3,3 +3,5 @@
 *.woff2
 *.styl
 *.md
+CNAME
+dist

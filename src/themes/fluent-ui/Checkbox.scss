@@ -1,4 +1,5 @@
-@import '../style/variable.scss';
+@import 'variable.scss';
+@import 'mixins/focusStyle';
 
 $checkboxSize: 20px;
 $checkboxTransitionDuration: 200ms;
@@ -7,6 +8,8 @@ $checkboxTransitionTiming: cubic-bezier(0.4, 0, 0.23, 1);
 .checkbox {
   position: relative;
   display: inline-flex;
+  margin-left: 2px;
+  margin-right: 2px;
   cursor: pointer;
 
   .checkbox__control {
@@ -58,6 +61,10 @@ $checkboxTransitionTiming: cubic-bezier(0.4, 0, 0.23, 1);
     margin-left: 8px;
     margin-right: 8px;
   }
+}
+
+.checkbox.checkbox--focus {
+  @include focus-after-outline($padding: -2px, $onFocus: false);
 }
 
 .checkbox.checkbox--checked {

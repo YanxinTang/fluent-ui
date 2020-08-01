@@ -1,7 +1,7 @@
-import FluentUI from '../../src';
-import icons from '@/style/icon.json';
+import FluentUI from '@';
+import icons from '@/themes/fluent-ui/icon.json';
 
-import '@/style/index.scss';
+import '@/themes/fluent-ui/index.scss';
 
 export default ({ Vue }) => {
   Vue.prototype.$icons = icons;

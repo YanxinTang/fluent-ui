@@ -1,10 +1,13 @@
 import { mount } from '@vue/test-utils';
-import Radio from '@packages/Radio';
+import Radio from '@components/Radio';
 
 describe('Radio', () => {
   test('create', () => {
     const wrapper = mount(Radio);
     expect(wrapper.classes()).toContain('radio');
+    ['radio--checked', 'radio--disabled', 'radio--focus'].forEach((className) => {
+      expect(wrapper.classes()).not.toContain(className);
+    });
   });
 
   test('disabled', () => {
@@ -25,6 +28,20 @@ describe('Radio', () => {
     });
     expect(wrapper.find('.radio__text').exists()).toBe(true);
     expect(wrapper.find('.radio__text').text()).toBe(labelText);
+  });
+
+  test('focus and blur event', async () => {
+    const wrapper = mount(Radio);
+    const input = wrapper.find('input[type="radio"]');
+    expect(wrapper.vm.focus).toBe(false);
+
+    await input.trigger('focus');
+    expect(wrapper.vm.focus).toBe(true);
+    expect(wrapper.classes()).toContain('radio--focus');
+
+    await input.trigger('blur');
+    expect(wrapper.vm.focus).toBe(false);
+    expect(wrapper.classes()).not.toContain('radio--focus');
   });
 
   test('radio group', async () => {

@@ -1,5 +1,7 @@
 {
-  "Button": "./packages/Button",
-  "Checkbox": "./packages/Checkbox",
-  "Radio": "./packages/Radio"
+  "Button": "@components/Button",
+  "Checkbox": "@components/Checkbox",
+  "Radio": "@components/Radio",
+  "Row": "@components/Row",
+  "Col": "@components/Col"
 }

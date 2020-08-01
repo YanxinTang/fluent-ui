@@ -4,14 +4,17 @@
     :class="{
       'checkbox--disabled': isDisabled,
       'checkbox--checked': isChecked,
+      'checkbox--focus': focus,
     }"
   >
     <input
       type="checkbox"
       class="checkbox__control"
       :value="checkboxValue"
-      @change="changeHandler"
       :disabled="isDisabled"
+      @change="changeHandler"
+      @focus="focus = true"
+      @blur="focus = false"
     />
     <span class="checkbox__input">
       <i class="checkbox__inner icon icon-CheckMark"></i>
@@ -51,6 +54,7 @@ export default {
   data() {
     return {
       selfValue: this.checked,
+      focus: false,
     };
   },
   computed: {

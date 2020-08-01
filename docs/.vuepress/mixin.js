@@ -1,7 +1,7 @@
 import { bindFocusEvents } from '@';
 
 export default {
-  mounted () {
+  mounted() {
     bindFocusEvents();
   },
-}
+};

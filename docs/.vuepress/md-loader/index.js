@@ -1,6 +1,6 @@
 const { genInlineComponentText } = require('./util');
 
-module.exports = (source) => {
+module.exports = source => {
   const demoBlockReg = /:::\s*demo([\s\S]*?):::/gm;
   let id = 0;
   const components = [];
@@ -33,7 +33,7 @@ module.exports = (source) => {
   });
 
   componenetsString = components
-    .map((component) => {
+    .map(component => {
       return `'${component[0]}': ${component[1]}`;
     })
     .join(',');

@@ -26,7 +26,7 @@ module.exports = {
     ],
   },
   clientRootMixin: path.resolve(__dirname, 'mixin.js'),
-  chainWebpack: (config) => {
+  chainWebpack: config => {
     const sourcePath = path.resolve(process.cwd(), 'src');
     const componentsPath = path.resolve(sourcePath, 'components');
     config.resolve.alias.set('@components', componentsPath);
@@ -34,7 +34,7 @@ module.exports = {
 
     config.module.rule('markdown-demo').test(/\.md$/).use('demo-loader').loader(require.resolve('./md-loader'));
   },
-  extendMarkdown: (md) => {
+  extendMarkdown: md => {
     const defaultRender = md.renderer.rules.fence;
     md.renderer.rules.fence = (tokens, idx, options, env, self) => {
       const token = tokens[idx];

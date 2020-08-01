@@ -15,7 +15,7 @@ const themesPath = path.resolve(cwd, 'src', 'themes');
 
 function directories(p) {
   const entries = readdirSync(p, { withFileTypes: true });
-  return entries.filter((entry) => entry.isDirectory()).map((entry) => entry.name);
+  return entries.filter(entry => entry.isDirectory()).map(entry => entry.name);
 }
 
 function createCleanThemeTask(theme) {
@@ -47,4 +47,4 @@ function buildTheme(theme) {
   return series(createCleanThemeTask(theme), createCompileThemeStyleTask(theme), createCopyThemeFontTask(theme));
 }
 
-exports.default = parallel(...directories(themesPath).map((theme) => buildTheme(theme)));
+exports.default = parallel(...directories(themesPath).map(theme => buildTheme(theme)));

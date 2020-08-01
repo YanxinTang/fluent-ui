@@ -40,7 +40,13 @@
   }
 } */
 
-@mixin focus-after-outline($padding: 0, $color: $neutralSecondary, $thickness: 1px, $onFocus: true, $position: relative) {
+@mixin focus-after-outline(
+  $padding: 0,
+  $color: $neutralSecondary,
+  $thickness: 1px,
+  $onFocus: true,
+  $position: relative
+) {
   & {
     @include focus-clear();
     position: $position;
@@ -52,14 +58,14 @@
 }
 
 // When focus is set using the keyboard, apply an outline.
-@mixin after-outline ($padding: 0, $color: $neutralSecondary, $thickness: 1px) {
-    box-sizing: border-box;
-    content: '';
-    position: absolute;
-    top: $padding;
-    right: $padding;
-    bottom: $padding;
-    left: $padding;
-    pointer-events: none;
-    outline: $thickness solid $color;
+@mixin after-outline($padding: 0, $color: $neutralSecondary, $thickness: 1px) {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  top: $padding;
+  right: $padding;
+  bottom: $padding;
+  left: $padding;
+  pointer-events: none;
+  outline: $thickness solid $color;
 }

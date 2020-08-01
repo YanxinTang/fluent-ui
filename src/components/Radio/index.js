@@ -1,6 +1,6 @@
 import Radio from './Radio.vue';
 
-Radio.install = (Vue) => {
+Radio.install = Vue => {
   Vue.component(Radio.name, Radio);
 };
 

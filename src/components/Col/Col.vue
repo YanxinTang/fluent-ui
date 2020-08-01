@@ -31,14 +31,14 @@ export default {
     classList() {
       const classList = [];
 
-      ['span', 'offset'].forEach((prop) => {
+      ['span', 'offset'].forEach(prop => {
         if (this[prop] > 0) {
           const className = prop === 'span' ? `col-${this[prop]}` : `col-${prop}-${this[prop]}`;
           classList.push(className);
         }
       });
 
-      ['sm', 'md', 'lg', 'xl', 'xxl', 'xxxl'].forEach((size) => {
+      ['sm', 'md', 'lg', 'xl', 'xxl', 'xxxl'].forEach(size => {
         if (typeof this[size] === 'number') {
           classList.push(`col-${size}-${this[size]}`);
         } else if (typeof this[size] === 'object') {

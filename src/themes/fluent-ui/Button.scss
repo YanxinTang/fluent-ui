@@ -27,7 +27,7 @@
     color: $neutralDark;
     background-color: $neutralLight;
   }
-  
+
   @include focus-after-outline(2px);
 
   &:disabled {

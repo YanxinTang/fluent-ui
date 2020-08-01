@@ -5,7 +5,7 @@ describe('Radio', () => {
   test('create', () => {
     const wrapper = mount(Radio);
     expect(wrapper.classes()).toContain('radio');
-    ['radio--checked', 'radio--disabled', 'radio--focus'].forEach((className) => {
+    ['radio--checked', 'radio--disabled', 'radio--focus'].forEach(className => {
       expect(wrapper.classes()).not.toContain(className);
     });
   });

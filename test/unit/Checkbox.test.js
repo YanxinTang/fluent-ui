@@ -5,7 +5,7 @@ describe('Checkbox', () => {
   test('create', () => {
     const wrapper = mount(Checkbox);
     expect(wrapper.classes()).toContain('checkbox');
-    ['checkbox--checked', 'checkbox--disabled', 'checkbox--focus'].forEach((className) => {
+    ['checkbox--checked', 'checkbox--disabled', 'checkbox--focus'].forEach(className => {
       expect(wrapper.classes()).not.toContain(className);
     });
   });

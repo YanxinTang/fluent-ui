@@ -10,5 +10,5 @@ module.exports = {
     '^@/(.*)$': '<rootDir>/src/$1',
     '^@components/(.*)$': '<rootDir>/src/components/$1',
   },
-  collectCoverageFrom: ['src/**/*.{js}', 'packages/**/*.{js,vue}'],
+  collectCoverageFrom: ['src/**/*.{js,vue}'],
 };

@@ -50,10 +50,3 @@
 | 参数  | 说明 | 回调参数 |
 |-------|------ |------|
 | change | Radio 状态变化后的事件 | function (newValue: 选中的 Radio 的值) |
-
-
-## 单组件导入
-
-```js
-import { Radio } from '@tyx1703/fluent-ui/Radio';
-```

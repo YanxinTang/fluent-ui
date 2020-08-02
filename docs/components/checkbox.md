@@ -112,10 +112,3 @@
 | 参数  | 说明 | 回调参数 |
 |-------|------ |------|
 | change | Checkbox 状态变化后的事件 | function (newValue) |
-
-
-## 单组件导入
-
-```js
-import { Checkbox } from '@tyx1703/fluent-ui/Checkbox';
-```

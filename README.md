@@ -28,7 +28,57 @@ Vue.use(FluentUI);
 
 ### On demand
 
-Preparing
+1. install `babel-plugin-theme-component`
+
+```bash
+yarn add -D babel-plugin-theme-component
+```
+
+2. edit .babelrc (babel.config.js)
+
+```json
+// import style from scss
+
+{
+  "plugins": [
+    [
+      "theme-component", 
+      {
+        "libraryName": "@tyx1703/fluent-ui",
+        "style": true,
+        "styleDirectory": "src/themes/fluent-ui",
+        "styleExtension": "scss",
+      }
+    ]
+  ]
+}
+
+// import style from css
+{
+  "plugins": [
+    [
+      "theme-component", 
+      {
+        "libraryName": "@tyx1703/fluent-ui",
+        "style": true,
+        "styleDirectory": "dist/fluent-ui",
+      }
+    ]
+  ]
+}
+```
+
+3. import components in main.js
+
+```js
+// main.js
+import Vue from 'vue';
+import { Button } from '@tyx1703/fluent-ui';
+
+Vue.use(Button);
+```
+
+You can check [this file](https://github.com/YanxinTang/fluent-ui/blob/master/components.json) to get more components.
 
 ## Contribution
 

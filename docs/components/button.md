@@ -96,12 +96,6 @@
 | icon | 按钮图标 | String | -- |  |
 | secondary-text | 次要文字 | String | -- | |
 
-## 单组件导入
-
-```js
-import { Checkbox } from '@tyx1703/fluent-ui/Button';
-```
-
 <style lang="scss">
 .demo {
   .button-group {

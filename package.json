@@ -23,8 +23,7 @@
     "test": "jest",
     "lint": "eslint --ext .js,.vue src test build",
     "format": "prettier --write src/**/* test/**/* docs/**/*",
-    "release": "standard-version",
-    "prepare": "yarn build:lib && yarn build:components && yarn build:themes"
+    "release": "standard-version"
   },
   "husky": {
     "hooks": {

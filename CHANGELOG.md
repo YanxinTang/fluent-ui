@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/YanxinTang/fluent-ui/compare/v0.0.1...v0.1.0) (2020-08-04)
+
+
+### Features
+
+* support components build ([aabf808](https://github.com/YanxinTang/fluent-ui/commit/aabf80851d60541657e679815c78462c7f57e6ca))
+
+
+### Bug Fixes
+
+* **checkbox:** checkbox text middle in vertical ([f37d8e9](https://github.com/YanxinTang/fluent-ui/commit/f37d8e948a7f769a591c34f58ed884a044010f35))
+
 ### 0.0.1 (2020-07-25)
 
 

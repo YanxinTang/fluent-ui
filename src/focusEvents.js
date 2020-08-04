@@ -11,7 +11,7 @@ function getWindow(element) {
 }
 
 function setFocusVisibility(visible, element) {
-  const win = getWindow(element) ?? getWindow();
+  const win = getWindow(element);
   if (win) {
     const { classList } = win.document.body;
     classList.add(visible ? focusVisibleClassname : focusInvisibleClassname);
@@ -45,7 +45,7 @@ function onPointDownHandler(event) {
 }
 
 function onKeyDownHandler(event) {
-  if (isDirectionalKeyEvent(event.which)) {
+  if (isDirectionalKeyEvent(event.keyCode)) {
     setFocusVisibility(true, event.target);
   }
 }

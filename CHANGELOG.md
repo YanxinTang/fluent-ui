@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/YanxinTang/fluent-ui/compare/v0.1.0...v0.1.1) (2020-08-05)
+
+
+### Bug Fixes
+
+* 'This dependency was not found' error when installed from npm ([8b13c30](https://github.com/YanxinTang/fluent-ui/commit/8b13c307efbcf9b697898c7c11d09e0c4ad42d71))
+
 ## [0.1.0](https://github.com/YanxinTang/fluent-ui/compare/v0.0.1...v0.1.0) (2020-08-04)
 
 

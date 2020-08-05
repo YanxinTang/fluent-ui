@@ -22,8 +22,7 @@ jobs:
       run: yarn test
     
     - name: Bulid Lib & Build Docs
-      run: |
-        yarn build
+      run: yarn build
 
   publish-npm:
     needs: build
@@ -34,11 +33,14 @@ jobs:
         with:
           node-version: '12.x'
           registry-url: https://registry.npmjs.org/
-      - run: yarn build
-      - run: yarn publish --access public
+      - name: Publish to NPM
+        run: |
+          yarn install
+          yarn build
+          yarn publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-  
+
   create-release:
     needs: build
     runs-on: ubuntu-latest

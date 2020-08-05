@@ -1,7 +1,7 @@
 # Fluent UI
 
 ![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/YanxinTang/fluent-ui/Build/master)
-[![codecov](https://codecov.io/gh/YanxinTang/fluent-ui/branch/master/graph/badge.svg)](https://codecov.io/gh/YanxinTang/fluent-ui)
+[![Coverage Status](https://coveralls.io/repos/github/YanxinTang/fluent-ui/badge.svg)](https://coveralls.io/github/YanxinTang/fluent-ui)
 [![npm (scoped)](https://img.shields.io/npm/v/@tyx1703/fluent-ui)](https://www.npmjs.com/package/@tyx1703/fluent-ui)
 [![GitHub](https://img.shields.io/github/license/YanxinTang/fluent-ui)](https://github.com/YanxinTang/fluent-ui/blob/master/LICENSE)
 

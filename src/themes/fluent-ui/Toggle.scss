@@ -1,0 +1,148 @@
+@import 'variable.scss';
+@import 'mixins/focusStyle';
+
+$defaultPillWidth: 40px;
+$defaultPillHeight: 20px;
+$defaultThumbSize: 12px;
+
+.toggle {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: $font-size-medium;
+
+  .toggle__label {
+    padding: 5px 0;
+    font-weight: 600;
+    color: $neutralPrimary;
+  }
+
+  .toggle__inner-container {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .toggle__background {
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: $defaultPillHeight/2;
+    transition: all 0.1s ease;
+    border: 1px solid $neutralSecondary;
+    width: $defaultPillWidth;
+    height: $defaultPillHeight;
+    background-color: $white;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 3px;
+    outline: transparent;
+
+    .toggle-thumb {
+      display: block;
+      width: $defaultThumbSize;
+      height: $defaultThumbSize;
+      border-radius: 50%;
+      background-color: $neutralSecondary;
+    }
+  }
+
+  .toggle__state-text {
+    margin: 0 8px;
+    user-select: none;
+  }
+
+
+  &:hover {
+    .toggle__background {
+      border-color: $neutralDark;
+    }
+
+    .toggle-thumb {
+      background-color: $neutralDark;
+    }
+  }
+
+  .toggle__control {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    outline: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+.toggle.toggle--inline {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  .toggle__label {
+    order: 1;
+    margin-right: 0;
+    margin-left: 16px;
+  }
+}
+
+.toggle.toggle--inline.toggle--with-state-text {
+  
+  .toggle__label {
+    order: 0;
+    margin-right: 16px;
+    margin-left: 0;
+  }
+}
+
+.toggle.toggle--focus {
+  .toggle__background {
+    @include focus-after-outline($padding: -2px, $onFocus: false);
+  }
+}
+
+.toggle.toggle--checked {
+  .toggle__background {
+    justify-content: flex-end;
+    background-color: $themePrimary;
+    border-color: $themePrimary;
+
+    .toggle-thumb{
+      background-color: $white;
+    }
+  }
+  
+
+  &:hover {
+    .toggle__background {
+      background-color: $themeDark;
+      border-color: $themeDark;
+    }
+  }
+}
+
+.toggle.toggle--disabled {
+  .toggle__label {
+    color: $neutralTertiary;
+  }
+
+  .toggle__background,.toggle__background:hover {
+    border-color: $neutralTertiaryAlt;
+    cursor: default;
+
+    .toggle-thumb {
+      background-color: $neutralTertiaryAlt;
+    }
+  }
+}
+
+.toggle.toggle--disabled.toggle--checked {
+  .toggle__background,.toggle__background:hover {
+    border-color: $neutralTertiaryAlt;
+    background-color: $neutralTertiaryAlt;
+    cursor: default;
+
+    .toggle-thumb {
+      background-color: $neutralLighter;
+    }
+  }
+}

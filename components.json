@@ -3,5 +3,6 @@
   "Checkbox": "@components/Checkbox",
   "Radio": "@components/Radio",
   "Row": "@components/Row",
-  "Col": "@components/Col"
+  "Col": "@components/Col",
+  "Toggle": "@components/Toggle"
 }

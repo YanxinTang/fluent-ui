@@ -1,0 +1,133 @@
+@import 'variable';
+
+$color: $neutralPrimary;
+$iconColor: $themePrimary;
+$clearButtonColor: $neutralSecondary;
+$background: $white;
+$borderRadius: $roundedCorner2;
+$borderColor: $neutralSecondary;
+$transition: width 0.167s ease 0s;
+$hoverBorderColor: $neutralPrimary;
+$disabledColor: $neutralTertiary;
+$disabledBorderColor: $neutralLighter;
+$disabledBackgroundColor: $neutralLighter;
+
+.searchbox {
+  position: relative;
+  color: $color;
+  background-color: $background;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  padding: 1px 0 1px 4px;
+  border-radius: $borderRadius;
+  border: 1px solid $borderColor;
+  height: 32px;
+  box-sizing: border-box;
+  font-size: $font-size-medium;
+  padding: 0 1px;
+  -webkit-font-smoothing: antialiased;
+
+  .searchbox__icon-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    flex-shrink: 1;
+    font-size: $font-size-medium;
+    width: 32px;
+    text-align: center;
+    color: $iconColor;
+    cursor: text;
+
+    icon {
+      opacity: 1;
+    }
+  }
+
+  .searchbox__field {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    color: $color;
+    flex: 1 1 0;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &::-ms-clear {
+      display: none;
+    }
+  }
+
+  .searchbox__clear-button {
+    display: flex;
+    flex-flow: column nowrap;
+    .button {
+      flex-basis: 28px;
+      padding: 0 4px;
+      height: 100%;
+      color: $clearButtonColor;
+      font-size: 12px;
+    }
+  }
+  
+  &:hover {
+    border-color: $hoverBorderColor;
+  }
+
+  &.searchbox--focus {
+    border-color: $themePrimary;
+    border-width: 2px;
+
+    .searchbox__icon-container {
+      width: 4px;
+  
+      .icon {
+        opacity: 0;
+      }
+    }
+  }
+
+  &.searchbox--disabled {
+    border-color: $disabledBorderColor;
+    background-color: $disabledBackgroundColor;
+    pointer-events: none;
+    cursor: default;
+
+    .searchbox__icon-container {
+      color: $disabledColor;
+    }
+  }
+}
+
+.searchbox.searchbox--animation {
+  .searchbox__icon-container { 
+    transition: $transition;
+  }
+}
+
+.searchbox.searchbox--underlined {
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+  padding: 1px 0 1px 8px;
+
+  &.searchbox--focus {
+    border-bottom-width: 2px;
+  }
+
+  &.searchbox--disabled {
+    background-color: $white;
+  }
+}
+
+.searchbox.searchbox--has-input:hover {
+  .searchbox__icon-container {
+    width: 4px;
+
+    .icon {
+      opacity: 0;
+    }
+  }
+}

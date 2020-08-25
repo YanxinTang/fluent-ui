@@ -4,5 +4,6 @@
   "Radio": "@components/Radio",
   "Row": "@components/Row",
   "Col": "@components/Col",
-  "Toggle": "@components/Toggle"
+  "Toggle": "@components/Toggle",
+  "SearchBox": "@components/SearchBox"
 }

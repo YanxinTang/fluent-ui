@@ -4,6 +4,7 @@ import Col from '@components/Col';
 import Checkbox from '@components/Checkbox';
 import Radio from '@components/Radio';
 import Toggle from '@components/Toggle';
+import SearchBox from '@components/SearchBox';
 
 const components = {
   Button,
@@ -12,6 +13,7 @@ const components = {
   Checkbox,
   Radio,
   Toggle,
+  SearchBox,
 };
 
 const install = function (Vue) {

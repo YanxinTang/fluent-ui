@@ -21,7 +21,8 @@ module.exports = {
           '/components/button',
           '/components/checkbox',
           '/components/radio',
-          '/components/toggle'
+          '/components/toggle',
+          '/components/searchBox'
         ],
       },
     ],

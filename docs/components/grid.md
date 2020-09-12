@@ -277,12 +277,6 @@ Fluent-UI 的栅格布局是借助 `flex` 来完成的。主要有两个组件�
 | xxl | 1366px - 1919px 占据栅格列数 | number | — | — |
 | xxxl | 1920px 以上 | 占据栅格列数 | number | — | — |
 
-## 单组件导入
-
-```js
-import { Row, Col } from '@tyx1703/fluent-ui/Grid';
-```
-
 <style lang="scss">
   $oddBackgroundColor: #69797e;
   $evenBackgroundColor: #a0aeb2;

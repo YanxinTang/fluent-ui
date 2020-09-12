@@ -21,7 +21,7 @@ npm i @tyx1703/fluent-ui
 ### Fully import
 
 ```js
-import FluentUI from '@/tyx1703/fluent-ui';
+import FluentUI from '@tyx1703/fluent-ui';
 
 Vue.use(FluentUI);
 ```

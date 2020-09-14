@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/YanxinTang/fluent-ui/compare/v0.1.3...v0.1.4) (2020-09-14)
+
+
+### Features
+
+* new component SearchBox ([580b5ba](https://github.com/YanxinTang/fluent-ui/commit/580b5ba61ae4f2aaf1a0c3b0372f81cd9b56955b))
+* new component Toggle ([3a2dcac](https://github.com/YanxinTang/fluent-ui/commit/3a2dcac4c5df975c66190763d47c49298085548e))
+
 ### [0.1.3](https://github.com/YanxinTang/fluent-ui/compare/v0.1.2...v0.1.3) (2020-08-05)
 
 ### [0.1.2](https://github.com/YanxinTang/fluent-ui/compare/v0.1.1...v0.1.2) (2020-08-05)
